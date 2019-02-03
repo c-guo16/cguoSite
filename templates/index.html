@@ -1,3 +1,5 @@
+{% load staticfiles %}
+
 <head>
     <title>cguo16 main page</title>
 
@@ -38,7 +40,7 @@
     </style>
 </head>
 
-<body background="/static/images/indexBG.jpg" style="background-size: 100%">
+<body style="background-size: 100%;background-image: url({% static 'images/indexBG.jpg' %})">
 
     <p id = "title" align="center">☆ cguo16的首页 ☆</p>
 
