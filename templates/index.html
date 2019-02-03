@@ -1,0 +1,52 @@
+<head>
+    <title>cguo16 main page</title>
+
+    <style type="text/css">
+        #title{
+            font-family: "Courier New", Courier, "Courier 10 Pitch", monospace;
+            font-size:38px;
+            font-weight:lighter;
+            color:RGB(255,0,0);
+        }
+        #box{
+            width: 380px;
+            margin: 30px auto;
+            font-family: 'Microsoft YaHei';
+            font-size: 14px;
+        }
+        #textedit{
+            width: 260px;
+            border: 2px solid #e2e2e2;
+            height: 30px;
+            float: left;
+            background-repeat: no-repeat;
+            background-size: 25px;
+            background-position:5px center;
+            padding:0 0 0 40px;
+        }
+        #search{
+            width: 76px;
+            height: 34px;
+            float: right;
+            background: #2942c4;
+            color: white;
+            text-align: center;
+            line-height: 32px;
+            cursor: pointer;
+        }
+
+    </style>
+</head>
+
+<body background="/static/images/indexBG.jpg" style="background-size: 100%">
+
+    <p id = "title" align="center">☆ cguo16的首页 ☆</p>
+
+    <form action="/newsSearch/" method="get">
+        <div id="box">
+            <input id="textedit" type="text" name="search" placeholder="请输入关键字" required="true">
+            <input id="search" type="submit" value="搜索">
+        </div>
+    </form>
+
+</body>
