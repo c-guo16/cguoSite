@@ -10,6 +10,12 @@
             font-weight:lighter;
             color:RGB(255,0,0);
         }
+        #v_times{
+            font-family: "Courier New", Courier, "Courier 10 Pitch", monospace;
+            font-size:38px;
+            font-weight:lighter;
+            color:RGB(255,0,0);
+        }
         #box{
             width: 380px;
             margin: 30px auto;
@@ -43,6 +49,7 @@
 <body style="background-size: 100%;background-image: url({% static 'images/indexBG.jpg' %})">
 
     <p id = "title" align="center">☆ cguo16的首页 ☆</p>
+    <p id = "v_times" align="center">访问次数：{{ v_times }}</p>
 
     <form action="/newsSearch/" method="get">
         <div id="box">
