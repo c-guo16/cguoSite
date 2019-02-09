@@ -1,15 +1,36 @@
-{% extends 'base.html' %}
+{% extends "base.html" %}
 
-{% block title %}首页{% endblock %}
+{% block head %}
+    <title>Cguo16's Home</title>
+<style>
+        #v_ip{
+            font-family: "Courier New", Courier, "Courier 10 Pitch", monospace;
+            font-size:20px;
+            font-weight:lighter;
+            color:RGB(255,0,0);
+            text-align:right;
+}
+        #title{
+            font-family: "Courier New", Courier, "Courier 10 Pitch", monospace;
+            font-size:38px;
+            font-weight:lighter;
+            color:RGB(255,0,0);
+            text-align: center;
+}
+        #v_times{
+            font-family: "Courier New", Courier, "Courier 10 Pitch", monospace;
+            font-size:38px;
+            font-weight:lighter;
+            color:RGB(255,0,0);
+            text-align: center;
+}
+    </style>
+{% endblock %}
 
 {% block content %}
-    <p id = "title" align="center">☆ cguo16的首页 ☆</p>
-    <p id = "v_times" align="center">访问次数：{{ v_times }}</p>
+    <p id = "v_ip">来访者ip：{{ v_ip }}</p>
+    <p id = "title">☆ cguo16的首页 ☆</p>
+    <p id = "v_times">访问次数：{{ v_times }}</p>
 
-    <form action="/newsSearch/" method="get">
-        <div id="box">
-            <input id="textedit" type="text" name="search" placeholder="请输入关键字" required="true">
-            <input id="search" type="submit" value="搜索">
-        </div>
-    </form>
+
 {% endblock %}

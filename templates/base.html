@@ -1,55 +1,37 @@
+<!DOCTYPE html>
 {% load staticfiles %}
 
 <head>
-    <title>Cguo16's Home</title>
-
-    <style type="text/css">
-        #title{
-            font-family: "Courier New", Courier, "Courier 10 Pitch", monospace;
-            font-size:38px;
-            font-weight:lighter;
-            color:RGB(255,0,0);
-        }
-        #v_times{
-            font-family: "Courier New", Courier, "Courier 10 Pitch", monospace;
-            font-size:38px;
-            font-weight:lighter;
-            color:RGB(255,0,0);
-        }
-        #box{
-            width: 380px;
-            margin: 30px auto;
-            font-family: 'Microsoft YaHei';
-            font-size: 14px;
-        }
-        #textedit{
-            width: 260px;
-            border: 2px solid #e2e2e2;
-            height: 30px;
-            float: left;
-            background-repeat: no-repeat;
-            background-size: 25px;
-            background-position:5px center;
-            padding:0 0 0 40px;
-        }
-        #search{
-            width: 76px;
-            height: 34px;
-            float: right;
-            background: #2942c4;
-            color: white;
-            text-align: center;
-            line-height: 32px;
-            cursor: pointer;
-        }
-
-    </style>
+    <link rel="stylesheet" type="text/css" href="/static/css/base.css" />
+    {% block head %}
+        <title>Base Html</title>
+    {% endblock %}
 </head>
 
-<body style="background-size: 100%;background-image: url({% static 'images/indexBG.jpg' %})">
+<body>
+    <div id="main_area">
+        <div id="header">
+            <h1 id="logo">
+                <a href="/"></a>
+            </h1>
+            <div id="search_box">
+                <form action="/newsSearch/" method="get">
+                    <input id="search_edit" type="text" name="search" placeholder="请输入关键字" required="true">
+                    <input id="search" type="submit" value="搜索">
+                </form>
+            </div>
+        </div>
+        <div id="navigation_bar">
+            <ul>
+                <li class="{% ifequal current_page "home" %}active{% endifequal %}"><a href="/">首页</a></li>
+                <li class="{% ifequal current_page "course" %}active{% endifequal %}"><a href="/fileTransfer">文件服务</a></li>
+                <li class="{% ifequal current_page "course1" %}active{% endifequal %}"><a href="/fileTransfer">待定1</a></li>
+                <li class="{% ifequal current_page "course2" %}active{% endifequal %}"><a href="/fileTransfer">待定2</a></li>
+            </ul>
+        </div>
 
-    {% block content %}
-    <div>这里是默认内容，所有继承自这个模板的，如果不覆盖就显示这里的默认内容。</div>
-    {% endblock %}
-
+        {% block content %}
+            <div>这里是默认内容，所有继承自这个模板的，如果不覆盖就显示这里的默认内容。</div>
+        {% endblock %}
+    </div>
 </body>

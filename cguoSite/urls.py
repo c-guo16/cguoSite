@@ -16,9 +16,14 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from mainPage import views
+from django.contrib.staticfiles.urls import staticfiles_urlpatterns
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path(r'',views.index),
+    path('',views.render_index),
+    path('fileTransfer',views.render_file_transfer),
+    path('',views.render_index),
 
 ]
+
+urlpatterns += staticfiles_urlpatterns()

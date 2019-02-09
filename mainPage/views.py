@@ -16,8 +16,11 @@ def get_ip(request):
     return ip
 
 #首页：
-def index(request):
+def render_index(request):
     global visit_times
     visit_times = visit_times + 1  #访问次数增加
     print(get_ip(request))          #打印ip
-    return render(request,'index.html',{"v_times":visit_times})
+    return render(request,'index.html',{"v_times":visit_times,"v_ip":get_ip(request)})
+
+def render_file_transfer(request):
+    return render(request,"fileTransfer.html")
