@@ -3,6 +3,7 @@
 
 <head>
     <link rel="stylesheet" type="text/css" href="/static/css/base.css" />
+    <link rel="shortcut icon" href="/static/images/favicon.ico" type="image/x-icon" />
     {% block head %}
         <title>Base Html</title>
     {% endblock %}
@@ -11,9 +12,13 @@
 <body>
     <div id="main_area">
         <div id="header">
-            <h1 id="logo">
+            <h1 id="banner">
                 <a href="/"></a>
             </h1>
+            <div id="log">
+                <a href="/signUp" target="_blank">注册</a>
+                <a href="/signIn" target="_blank">登录</a>
+            </div>
             <div id="search_box">
                 <form action="/newsSearch/" method="get">
                     <input id="search_edit" type="text" name="search" placeholder="请输入关键字" required="true">
@@ -22,11 +27,12 @@
             </div>
         </div>
         <div id="navigation_bar">
+
             <ul>
-                <li class="{% ifequal current_page "home" %}active{% endifequal %}"><a href="/">首页</a></li>
-                <li class="{% ifequal current_page "course" %}active{% endifequal %}"><a href="/fileTransfer">文件服务</a></li>
-                <li class="{% ifequal current_page "course1" %}active{% endifequal %}"><a href="/fileTransfer">待定1</a></li>
-                <li class="{% ifequal current_page "course2" %}active{% endifequal %}"><a href="/fileTransfer">待定2</a></li>
+                <li class="{% ifequal current_page "home" %}active{% endifequal %}"><a href="/" target="_blank">首页</a></li>
+                <li class="{% ifequal current_page "course" %}active{% endifequal %}"><a href="/fileTransfer" target="_blank">文件服务</a></li>
+                <li class="{% ifequal current_page "course1" %}active{% endifequal %}"><a href="/fileTransfer" target="_blank">待定1</a></li>
+                <li class="{% ifequal current_page "course2" %}active{% endifequal %}"><a href="/fileTransfer" target="_blank">待定2</a></li>
             </ul>
         </div>
 

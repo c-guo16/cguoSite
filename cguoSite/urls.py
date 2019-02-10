@@ -22,8 +22,9 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('',views.render_index),
     path('fileTransfer',views.render_file_transfer),
-    path('',views.render_index),
-
+    path('signUp',views.render_sign_up),
+    path('signIn',views.render_sign_in),
+    path('userAgreement',views.render_user_agreement),
 ]
 
 urlpatterns += staticfiles_urlpatterns()

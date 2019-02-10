@@ -1,10 +1,85 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
+{% extends "base.html" %}
 
-</body>
-</html>
+{% block head %}
+    <title>User Sign Up</title>
+    <script language="javascript">
+        function agree(){
+            document.getElementById('button').disabled=!document.getElementById('cb').checked;
+        }
+    </script>
+
+    <style type="text/css">
+        p#title_logUp{
+            font-size: 30px;
+            text-align: center;
+            letter-spacing: 8px;
+        }
+        div#login{
+            width:500px;
+            height:400px;
+            margin:0 auto;
+            padding-top: 50px;
+            border-radius: 10px;
+            box-shadow: 3px 3px 5px #333333 ;
+            background-color: #ececec;
+        }
+        .form-group{
+            width:500px;
+            height: 70px;
+        }
+        .form-group label{
+            display: block;
+            font-size: 20px;
+            width: 100px;
+            float:left;
+            margin-left: 90px;
+        }
+        .form-group input{
+            height: 25px;
+            width:200px;
+            font-size: 16px;
+            margin-left: 10px;
+            float:left;
+        }
+        label#confirm_agreement{
+            margin-left:85px;
+            margin-top:-20px;
+            display: block;
+        }
+        input#button{
+            width: 100px;
+            height: 30px;
+            margin-left: 200px;
+            margin-top:30px;
+            font-size: 15px;
+            letter-spacing: 15px;
+            padding-left: 22px;
+        }
+    </style>
+{% endblock %}
+
+{% block content %}
+    <p id="title_logUp">用户注册</p>
+    <div id="login">
+        <form id='signUpForm' action="/su" method="post"> {% csrf_token %}
+            <div class="form-group">
+                <label style="letter-spacing: 7px">用户名：</label>
+                <input type="text" name="username" placeholder="请输入用户名" required oninvalid="setCustomValidity('用户名不能为空！')" oninput="setCustomValidity('')"/>
+            </div>
+            <div class="form-group">
+                <label style="letter-spacing: 20px">密码：</label>
+                <input type="password" name="password" placeholder="请输入密码" required oninvalid="setCustomValidity('密码不能为空！')" oninput="setCustomValidity('')"/>
+            </div>
+            <div class="form-group">
+                <label>确认密码：</label>
+                <input type="password" name="password_confirm" placeholder="请确认密码" required oninvalid="setCustomValidity('确认密码不能为空！')" oninput="setCustomValidity('')"/>
+            </div>
+            <div class="form-group">
+                <label style="letter-spacing: 20px">邮箱：</label>
+                <input type="text" name="mail" placeholder="请输入邮箱地址" required oninvalid="setCustomValidity('邮箱地址不能为空！')" oninput="setCustomValidity('')"/>
+            </div>
+            <label id="confirm_agreement"><input type="checkbox" value="" id="cb" onclick="agree()">我已阅读并同意<a href="/userAgreement" target="_blank">《cguo16网站用户协议》</a></label>
+            <input type="submit" value="注册" id="button" disabled="true">
+        </form>
+    </div>
+{% endblock %}
