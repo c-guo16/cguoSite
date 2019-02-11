@@ -25,6 +25,8 @@ urlpatterns = [
     path('signUp',views.render_sign_up),
     path('signIn',views.render_sign_in),
     path('userAgreement',views.render_user_agreement),
+    path('postSignUp',views.handle_sign_up_form),
+    path('postSignIn',views.handle_sign_in_form)
 ]
 
 urlpatterns += staticfiles_urlpatterns()

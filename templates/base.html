@@ -15,24 +15,26 @@
             <h1 id="banner">
                 <a href="/"></a>
             </h1>
-            <div id="log">
-                <a href="/signUp" target="_blank">注册</a>
-                <a href="/signIn" target="_blank">登录</a>
-            </div>
-            <div id="search_box">
-                <form action="/newsSearch/" method="get">
-                    <input id="search_edit" type="text" name="search" placeholder="请输入关键字" required="true">
-                    <input id="search" type="submit" value="搜索">
-                </form>
+            <div id="right_header">
+                <div id="log">
+                    <a href="/signUp" target="_blank" class="right_header_text">注册</a>
+                    <a href="/signIn" target="_blank" class="right_header_text">登录</a>
+                </div>
+                <div id="search_box">
+                    <form action="/newsSearch/" method="get">
+                        <input id="search_edit" type="text" name="search" placeholder="请输入关键字" required="true">
+                        <input id="search" type="submit" value="搜索">
+                    </form>
+                </div>
             </div>
         </div>
         <div id="navigation_bar">
 
             <ul>
-                <li class="{% ifequal current_page "home" %}active{% endifequal %}"><a href="/" target="_blank">首页</a></li>
-                <li class="{% ifequal current_page "course" %}active{% endifequal %}"><a href="/fileTransfer" target="_blank">文件服务</a></li>
-                <li class="{% ifequal current_page "course1" %}active{% endifequal %}"><a href="/fileTransfer" target="_blank">待定1</a></li>
-                <li class="{% ifequal current_page "course2" %}active{% endifequal %}"><a href="/fileTransfer" target="_blank">待定2</a></li>
+                <li {%if request.path == '/'%}class="active"{% endif %}><a href="/">首页</a></li>
+                <li {%if request.path|slice:'13' == '/fileTransfer'%}class="active"{% endif %}><a href="/fileTransfer">文件服务</a></li>
+                <li {%if request.path|slice:'2' == '/fileTransfer'%}class="active"{% endif %}><a href="/fileTransfer">待定1</a></li>
+                <li {%if request.path|slice:'2' == '/fileTransfer'%}class="active"{% endif %}><a href="/fileTransfer">待定2</a></li>
             </ul>
         </div>
 
@@ -40,4 +42,6 @@
             <div>这里是默认内容，所有继承自这个模板的，如果不覆盖就显示这里的默认内容。</div>
         {% endblock %}
     </div>
+    {% block scripts %}
+    {% endblock %}
 </body>

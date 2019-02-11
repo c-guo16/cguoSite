@@ -2,16 +2,15 @@
 
 {% block head %}
     <title>User Sign Up</title>
-
     <style type="text/css">
-        p#title_logUp{
+        p#title_signIn{
             font-size: 30px;
             text-align: center;
             letter-spacing: 8px;
         }
-        div#login{
+        div#signIn{
             width:600px;
-            height:450px;
+            height:300px;
             margin:0 auto;
             padding-top: 50px;
             border-radius: 10px;
@@ -52,11 +51,6 @@
             float: left;
             margin-left: 20px;
         }
-        label#confirm_agreement{
-            margin-left:85px;
-            margin-top:-20px;
-            display: block;
-        }
         input#button{
             width: 100px;
             height: 30px;
@@ -70,35 +64,21 @@
 {% endblock %}
 
 {% block content %}
-    <p id="title_logUp">用户注册</p>
-    <div id="login">
-        <form id='signUpForm' action="/postSignUp" method="post" onsubmit="return validate()"> {% csrf_token %}
+    <p id="title_signIn">用户登录</p>
+    <div id="signIn">
+        <form id='signInForm' action="/postSignIn" method="post" onsubmit="return validate()"> {% csrf_token %}
             <div class="form-group">
                 <label style="letter-spacing: 7px">用户名：</label>
-                <input type="text" name="username" id="username" placeholder="请输入用户名" onchange="check_form()"/>
+                <input type="text" name="username" id="username" placeholder="请输入用户名" required="required" oninvalid="setCustomValidity('用户名不能为空！')" oninput="setCustomValidity('')"/>
                 <div>
                     <p id="form_username"></p>
                 </div>
             </div>
             <div class="form-group">
                 <label style="letter-spacing: 20px">密码：</label>
-                <input type="password" name="password" id="password" placeholder="请输入密码" onchange="check_form()"/>
+                <input type="password" name="password" id="password" placeholder="请输入密码" required="required" oninvalid="setCustomValidity('请输入密码！')" oninput="setCustomValidity('')"/>
                 <div>
                     <p id="form_password"></p>
-                </div>
-            </div>
-            <div class="form-group">
-                <label>确认密码：</label>
-                <input type="password" name="password_confirm" id="password_confirm" placeholder="请确认密码" onchange="check_form()"/>
-                <div>
-                    <p id="form_password_confirm"></p>
-                </div>
-            </div>
-            <div class="form-group">
-                <label style="letter-spacing: 20px">邮箱：</label>
-                <input type="text" name="email" id="email" placeholder="请输入邮箱地址" onchange="check_form()"/>
-                <div>
-                    <p id="form_email"></p>
                 </div>
             </div>
             <div class="form-group">
@@ -106,8 +86,7 @@
                 <input type="text" style="width:80px" id="verification_code"/>
                 <canvas id="verification_code_canvas"></canvas>
             </div>
-            <label id="confirm_agreement"><input type="checkbox" value="" id="cb" onclick="check_form()">我已阅读并同意<a href="/userAgreement" target="_blank">《cguo16网站用户协议》</a></label>
-            <input type="submit" value="注册" id="button">
+            <input type="submit" value="登录" id="button">
         </form>
     </div>
 {% endblock %}
@@ -184,7 +163,6 @@
                 drawPic();
                 document.getElementById("verification_code").value="";
                 document.getElementById("password").value="";
-                document.getElementById("password_confirm").value="";
                 return false;
             }
             return true;
@@ -194,17 +172,10 @@
         function check_form() {
             var $un=document.getElementById("username");
             var $pw=document.getElementById("password");
-            var $pwc=document.getElementById("password_confirm");
-            var $em=document.getElementById("email");
             var $fun=document.getElementById("form_username");
             var $fpw=document.getElementById("form_password");
-            var $fpwc=document.getElementById("form_password_confirm");
-            var $fem=document.getElementById("form_email");
             $fun.innerText="";
             $fpw.innerText="";
-            $fpwc.innerText="";
-            $fem.innerText="";
-            var emailreg = /^([a-zA-Z0-9]+[_|\_|\.]?)*[a-zA-Z0-9]+@([a-zA-Z0-9]+[_|\_|\.]?)*[a-zA-Z0-9]+\.[a-zA-Z]{2,3}$/;
             if($un.value.length<=0){
                 $fun.innerText="用户名不能为空！";
                 valid=false;
@@ -213,24 +184,9 @@
                 $fpw.innerText="密码不能为空！";
                 valid=false;
             }
-            else if($pwc.value!==$pw.value){
-                $fpwc.innerText="确认密码不一致！";
-                valid=false;
-            }
-            else if($em.value.length<=0){
-                $fem.innerText="邮箱不能为空！";
-                valid=false;
-            }
-            else if(!emailreg.test($em.value)){
-                $fem.innerText="请输入合法的邮箱！";
-                valid=false;
-            }
-            else if(!document.getElementById('cb').checked){
-                valid=false;
-            }
             else valid=true;
             document.getElementById("button").disabled=!valid;
         }
-        check_form();
+
     </script>
 {% endblock %}

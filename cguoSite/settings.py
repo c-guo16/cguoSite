@@ -128,3 +128,12 @@ STATICFILES_DIRS = (
     ('fonts', os.path.join(STATIC_ROOT, 'fonts')),
     ('js', os.path.join(STATIC_ROOT, 'js')),
 )
+
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+
+EMAIL_USE_SSL = True
+EMAIL_HOST = 'smtp.qq.com'
+EMAIL_PORT = 25
+EMAIL_HOST_USER = '743535469@qq.com' # 帐号
+EMAIL_HOST_PASSWORD = 'stardust222a'  # 密码
+DEFAULT_FROM_EMAIL = 'cguo16 <743535469@qq.com>'
