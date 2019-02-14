@@ -1,5 +1,5 @@
 from django.shortcuts import render,redirect
-from django.shortcuts import HttpResponse
+from django.http import JsonResponse
 from mainPage import models
 
 # Create your views here.
@@ -38,17 +38,33 @@ def check_username_email(request):
         if username:
             same_name_user = models.User.objects.filter(username=username)
             if same_name_user:  #用户名已存在
-                return render(request,"signUp.html",{"username_note":"用户名已存在！"})
+                return JsonResponse({"message":"用户名已存在！"})
         if email:
             same_email=models.User.objects.filter(mail=email)
             if same_email:      #邮箱被占用
-                return render(request, "signUp.html", {"email_note": "邮箱已被占用！"})
+                return JsonResponse({"message": "邮箱已被占用！"})
+        return JsonResponse({"message": "ok"})
 
 #注册表单处理：
 def handle_sign_up_form(request):
     if request.method=="POST":
-        username=request.POST.get("username")
-        print(username)
+        username = request.POST.get("username")
+        email = request.POST.get("email")
+        if username:
+            same_name_user = models.User.objects.filter(username=username)
+            if same_name_user:  # 用户名已存在
+                return redirect('/')
+        if email:
+            same_email = models.User.objects.filter(mail=email)
+            if same_email:  # 邮箱被占用
+                return redirect('/')
+        new_user=models.User.objects.create()
+        new_user.username=request.POST.get("username")
+        new_user.password=request.POST.get("password")
+        new_user.mail=request.POST.get("email")
+        new_user.isActive=False
+        new_user.save()
+        return render(request,"requestForActivate.html",{"email":email})
 
 #登录页：
 def render_sign_in(request):
@@ -67,7 +83,6 @@ def handle_sign_in_form(request):
     if request.method=="POST":
         username=request.POST.get("username")
         password=request.POST.get("password")
-        #print(username)
 
         try:
             user = models.User.objects.get(username=username)

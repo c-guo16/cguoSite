@@ -83,7 +83,7 @@
         <form id='signUpForm' action="/postSignUp" method="post" onsubmit="return validate()"> {% csrf_token %}
             <div class="form-group">
                 <label style="letter-spacing: 7px">用户名：</label>
-                <input type="text" name="username" id="username" placeholder="请输入用户名" onchange="check_form();username_duplicate_check()"/>
+                <input type="text" name="username" id="username" placeholder="请输入用户名" onchange="username_duplicate_check()"/>
                 <div>
                     <p id="form_username">{{ username_note }}</p>
                 </div>
@@ -104,7 +104,7 @@
             </div>
             <div class="form-group">
                 <label style="letter-spacing: 20px">邮箱：</label>
-                <input type="text" name="email" id="email" placeholder="请输入邮箱地址" onchange="check_form();email_duplicate_check()"/>
+                <input type="text" name="email" id="email" placeholder="请输入邮箱地址" onchange="email_duplicate_check()"/>
                 <div>
                     <p id="form_email">{{ email_note }}</p>
                 </div>
@@ -194,6 +194,7 @@
                 document.getElementById("verification_code").value="";
                 document.getElementById("password").value="";
                 document.getElementById("password_confirm").value="";
+                check_form();
                 return false;
             }
             return true;
@@ -201,6 +202,18 @@
         drawPic();
 
         function check_form() {
+            if(un_duplicate){
+                document.getElementById("form_username").innerText="用户名已存在！";
+                valid=false;
+                document.getElementById("button").disabled=!valid;
+                return;
+            }
+            else if(em_duplicate){
+                document.getElementById("form_email").innerText="邮箱已被占用！";
+                valid=false;
+                document.getElementById("button").disabled=!valid;
+                return;
+            }
             var $un=document.getElementById("username");
             var $pw=document.getElementById("password");
             var $pwc=document.getElementById("password_confirm");
@@ -242,14 +255,29 @@
         }
         check_form();
 
+        var un_duplicate;
+        var em_duplicate;
         function username_duplicate_check() {
             $.ajax({
                 type:"POST",
                 url:"/postDuplicateCheck",
                 data:{"username":document.getElementById("username").value,
                          csrfmiddlewaretoken: '{{ csrf_token }}'},
-                success:function (result) {
-                    $("#form_username").innerText(result)
+                success:function(result) {
+                    document.getElementById("form_username").innerText="";
+                    document.getElementById("form_password").innerText="";
+                    document.getElementById("form_password_confirm").innerText="";
+                    document.getElementById("form_email").innerText="";
+                    if(result.message==="ok") {
+                        un_duplicate=false;
+                        check_form();
+                    }
+                    else {
+                        un_duplicate=true;
+                        document.getElementById("form_username").innerText = "用户名已存在！";
+                        valid=false;
+                        document.getElementById("button").disabled=!valid;
+                    }
                 }
             });
         }
@@ -259,8 +287,24 @@
                 url:"/postDuplicateCheck",
                 data:{"email":document.getElementById("email").value,
                         csrfmiddlewaretoken: '{{ csrf_token }}'},
-                success:function (result) {
-                    $("#form_email").innerText(result)
+                success:function(result) {
+                    document.getElementById("form_username").innerText="";
+                    document.getElementById("form_password").innerText="";
+                    document.getElementById("form_password_confirm").innerText="";
+                    document.getElementById("form_email").innerText="";
+                    if(result.message==="ok") {
+                        em_duplicate=false;
+                        check_form();
+                    }
+                    else {
+                        em_duplicate=true;
+                        if(un_duplicate)
+                            document.getElementById("form_username").innerText = "用户名已存在！";
+                        else
+                            document.getElementById("form_email").innerText = "邮箱已被占用！";
+                        valid=false;
+                        document.getElementById("button").disabled=!valid;
+                    }
                 }
             });
         }

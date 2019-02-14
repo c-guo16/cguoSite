@@ -1,0 +1,45 @@
+{% extends "base.html" %}
+
+{% block head %}
+    <title>Go To Activate Your Account</title>
+    <style type="text/css">
+        div#para{
+            text-align: center;
+        }
+        p#title{
+            font-size: 30px;
+            text-align: center;
+            letter-spacing: 8px;
+        }
+        p#para1{
+            font-size: 20px;
+            text-align: center;
+            display: inline;
+        }
+        span#email{
+            font-size: 20px;
+            color: red;
+            display: inline;
+        }
+        button#return{
+            margin: 50px auto;
+            width: 100px;
+            height: 50px;
+            color: white;
+            font-size: 16px;
+            text-align: center;
+            background-color: #2942c4;
+            cursor: pointer;
+        }
+    </style>
+{% endblock %}
+
+{% block content %}
+    <p id="title">注册成功</p>
+    <div id="para">
+        <p id="para1">您的账户处于未激活状态，请到您的邮箱<span id="email"> {{ email }} </span>查收激活邮件。</p>
+    </div>
+    <div style="text-align: center">
+        <button type="button" id="return" onclick="window.location.href='/'">返回首页</button>
+    </div>
+{% endblock %}
