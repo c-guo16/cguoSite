@@ -50,6 +50,17 @@ div#log a.right_header_text{
     text-decoration: none;
     color: white;
 }
+div#log p{
+    margin:0;
+    padding-left: 20px;
+    padding-right: 10px;
+    width: 100px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    color: white;
+    float: left;
+}
 #search_box{
     width: 300px;
 

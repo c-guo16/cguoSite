@@ -11,16 +11,17 @@
         }
         div#login{
             width:600px;
-            height:450px;
-            margin:0 auto;
+            height:500px;
+            margin:0 auto 50px;
             padding-top: 50px;
             border-radius: 10px;
             box-shadow: 3px 3px 5px #333333 ;
             background-color: #ececec;
         }
-        .form-group{
+        div.form-group{
+            padding-top: 30px;
             width:600px;
-            height: 70px;
+            height: 40px;
         }
         .form-group label{
             display: block;
@@ -54,14 +55,21 @@
         }
         label#confirm_agreement{
             margin-left:85px;
-            margin-top:-20px;
+            margin-top:10px;
             display: block;
+        }
+        p#message{
+            height: 50px;
+            padding-top: 10px;
+            text-align: center;
+            margin: 0;
+            color: red;
         }
         input#button{
             width: 100px;
             height: 30px;
             margin-left: 250px;
-            margin-top:30px;
+            margin-top:0;
             font-size: 15px;
             letter-spacing: 15px;
             padding-left: 22px;
@@ -75,9 +83,9 @@
         <form id='signUpForm' action="/postSignUp" method="post" onsubmit="return validate()"> {% csrf_token %}
             <div class="form-group">
                 <label style="letter-spacing: 7px">用户名：</label>
-                <input type="text" name="username" id="username" placeholder="请输入用户名" onchange="check_form()"/>
+                <input type="text" name="username" id="username" placeholder="请输入用户名" onchange="check_form();username_duplicate_check()"/>
                 <div>
-                    <p id="form_username"></p>
+                    <p id="form_username">{{ username_note }}</p>
                 </div>
             </div>
             <div class="form-group">
@@ -96,9 +104,9 @@
             </div>
             <div class="form-group">
                 <label style="letter-spacing: 20px">邮箱：</label>
-                <input type="text" name="email" id="email" placeholder="请输入邮箱地址" onchange="check_form()"/>
+                <input type="text" name="email" id="email" placeholder="请输入邮箱地址" onchange="check_form();email_duplicate_check()"/>
                 <div>
-                    <p id="form_email"></p>
+                    <p id="form_email">{{ email_note }}</p>
                 </div>
             </div>
             <div class="form-group">
@@ -107,6 +115,7 @@
                 <canvas id="verification_code_canvas"></canvas>
             </div>
             <label id="confirm_agreement"><input type="checkbox" value="" id="cb" onclick="check_form()">我已阅读并同意<a href="/userAgreement" target="_blank">《cguo16网站用户协议》</a></label>
+            <p id="message">{{ message }}</p>
             <input type="submit" value="注册" id="button">
         </form>
     </div>
@@ -232,5 +241,29 @@
             document.getElementById("button").disabled=!valid;
         }
         check_form();
+
+        function username_duplicate_check() {
+            $.ajax({
+                type:"POST",
+                url:"/postDuplicateCheck",
+                data:{"username":document.getElementById("username").value,
+                         csrfmiddlewaretoken: '{{ csrf_token }}'},
+                success:function (result) {
+                    $("#form_username").innerText(result)
+                }
+            });
+        }
+        function email_duplicate_check() {
+            $.ajax({
+                type:"POST",
+                url:"/postDuplicateCheck",
+                data:{"email":document.getElementById("email").value,
+                        csrfmiddlewaretoken: '{{ csrf_token }}'},
+                success:function (result) {
+                    $("#form_email").innerText(result)
+                }
+            });
+        }
+
     </script>
 {% endblock %}

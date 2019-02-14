@@ -129,6 +129,9 @@ STATICFILES_DIRS = (
     ('js', os.path.join(STATIC_ROOT, 'js')),
 )
 
+SESSION_SAVE_EVERY_REQUEST=True
+SESSION_EXPIRE_AT_BROWSER_CLOSE=True
+
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 
 EMAIL_USE_SSL = True
