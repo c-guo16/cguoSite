@@ -1,0 +1,45 @@
+{% extends "base.html" %}
+
+{% block head %}
+    <title>Account Activated</title>
+    <style type="text/css">
+        div#para{
+            text-align: center;
+        }
+        p#title{
+            font-size: 30px;
+            text-align: center;
+            letter-spacing: 8px;
+        }
+        p#para1{
+            font-size: 20px;
+            text-align: center;
+            display: inline;
+        }
+        span#username{
+            font-size: 20px;
+            color: red;
+            display: inline;
+        }
+        button#return{
+            margin: 50px auto;
+            width: 100px;
+            height: 50px;
+            color: white;
+            font-size: 16px;
+            text-align: center;
+            background-color: #2942c4;
+            cursor: pointer;
+        }
+    </style>
+{% endblock %}
+
+{% block content %}
+    <p id="title">账号已激活</p>
+    <div id="para">
+        <p id="para1"><span id="username">{{ username }}</span> 您好，您的账户已成功激活。</p>
+    </div>
+    <div style="text-align: center">
+        <button type="button" id="return" onclick="window.location.href='/'">返回首页</button>
+    </div>
+{% endblock %}

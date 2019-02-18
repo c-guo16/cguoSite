@@ -2,9 +2,10 @@
 {% load staticfiles %}
 
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="/static/css/base.css" />
     <link rel="shortcut icon" href="/static/images/favicon.ico" type="image/x-icon" />
-    <script src="/static/js/jquery-3.3.1.min.js"></script>
+    <script src="/static/js/jquery-1.11.0.min.js"></script>
     {% block head %}
         <title>Base Html</title>
     {% endblock %}
@@ -19,7 +20,7 @@
             <div id="right_header">
                 <div id="log">
                     {% if request.session.is_login %}
-                        <p>欢迎您，<a href="/userInfo">{{ request.session.user_name }}</a></p>
+                        <p>欢迎您，<a href="/userInfo" target="_blank">{{ request.session.user_name }}</a></p>
                         <a href="/logOut" class="right_header_text">退出登录</a>
                     {% else %}
                         <a href="/signUp" class="right_header_text">注册</a>
@@ -39,7 +40,7 @@
             <ul>
                 <li {%if request.path == '/'%}class="active"{% endif %}><a href="/">首页</a></li>
                 <li {%if request.path|slice:'13' == '/fileTransfer'%}class="active"{% endif %}><a href="/fileTransfer">文件服务</a></li>
-                <li {%if request.path|slice:'2' == '/fileTransfer'%}class="active"{% endif %}><a href="/fileTransfer">待定1</a></li>
+                <li {%if request.path|slice:'13' == '/messageBoard'%}class="active"{% endif %}><a href="/messageBoard">留言板</a></li>
                 <li {%if request.path|slice:'2' == '/fileTransfer'%}class="active"{% endif %}><a href="/fileTransfer">待定2</a></li>
             </ul>
         </div>

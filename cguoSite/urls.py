@@ -15,20 +15,28 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from mainPage import views
+from mainPage import views as mpviews
+from messageBoard import views as mbviews
 from django.contrib.staticfiles.urls import staticfiles_urlpatterns
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('',views.render_index),
-    path('fileTransfer',views.render_file_transfer),
-    path('signUp',views.render_sign_up),
-    path('signIn',views.render_sign_in),
-    path('userAgreement',views.render_user_agreement),
-    path('postSignUp',views.handle_sign_up_form),
-    path('postSignIn',views.handle_sign_in_form),
-    path('logOut',views.logout),
-    path('postDuplicateCheck',views.check_username_email)
+    #导航栏按键：
+    path('',mpviews.render_index),
+    path('fileTransfer',mpviews.render_file_transfer),
+    path('messageBoard',mbviews.render_message_board),
+
+    path('signUp',mpviews.render_sign_up),
+    path('signIn',mpviews.render_sign_in),
+    path('userAgreement',mpviews.render_user_agreement),
+    path('postSignUp',mpviews.handle_sign_up_form),
+    path('postSignIn',mpviews.handle_sign_in_form),
+    path('logOut',mpviews.logout),
+    path('postDuplicateCheck',mpviews.check_username_email),
+    path('activate/',mpviews.activate),
+    path('userInfo',mpviews.render_user_info),
+    path('postUserInfo',mpviews.sendUserInfo),
+
 ]
 
 urlpatterns += staticfiles_urlpatterns()
