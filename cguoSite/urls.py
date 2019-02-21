@@ -26,6 +26,7 @@ urlpatterns = [
     path('fileTransfer',mpviews.render_file_transfer),
     path('messageBoard',mbviews.render_message_board),
 
+    #用户管理功能：
     path('signUp',mpviews.render_sign_up),
     path('signIn',mpviews.render_sign_in),
     path('userAgreement',mpviews.render_user_agreement),
@@ -37,6 +38,11 @@ urlpatterns = [
     path('userInfo',mpviews.render_user_info),
     path('postUserInfo',mpviews.sendUserInfo),
 
+    #留言板功能：
+    path('getPublicMessage',mbviews.sendPublicMessage),
+    path('getPrivateMessage',mbviews.sendPrivateMessage),
+    path('postPublicMessage',mbviews.getPublicMessage),
+    path('postPrivateMessage',mbviews.getPrivateMessage)
 ]
 
 urlpatterns += staticfiles_urlpatterns()

@@ -2,20 +2,11 @@
 
 {% block head %}
     <title>Message Board</title>
-    <link rel="stylesheet" type="text/css" href="/static/css/messageBoard.css">
     <style type="text/css">
-        body {
-            background: linear-gradient(45deg, rgba(66, 183, 245, 0.8) 0%, rgba(66, 245, 189, 0.4) 100%);
-            color: rgba(0, 0, 0, 0.6);
-            font-family: "Roboto", sans-serif;
-            font-size: 14px;
-            line-height: 1.6em;
-        }
-
         [ripple] {
-          z-index: 1;
-          position: relative;
-          overflow: hidden;
+            z-index: 1;
+            position: relative;
+            overflow: hidden;
         }
         [ripple] .ripple {
             position: absolute;
@@ -37,116 +28,136 @@
             }
         }
         .tabs {
-          z-index: 15px;
-          position: relative;
-          background: #FFFFFF;
-          width: 600px;
-          border-radius: 4px;
-          box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
-          box-sizing: border-box;
-          margin: 100px auto 10px;
-          overflow: hidden;
+            position: relative;
+            background: #4285f4;
+            width: 800px;
+            margin: 100px auto 10px;
+            overflow: hidden;
+            border-radius: 10px;
         }
         .tabs-header {
-          position: relative;
-          background: #4285F4;
-          overflow: hidden;
+            position: relative;
+            background: #4285F4;
+            overflow: hidden;
         }
         .tabs-header .border {
-          position: absolute;
-          bottom: 0;
-          left: 0;
-          background: #F4B142;
-          width: auto;
-          height: 2px;
-          -webkit-transition: 0.3s ease;
-                  transition: 0.3s ease;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            background: #F4B142;
+            width: auto;
+            height: 2px;
+            transition: 0.3s ease;
         }
         .tabs-header ul {
-          display: -webkit-box;
-          display: -webkit-flex;
-          display: -ms-flexbox;
-          display: flex;
-          -webkit-box-orient: horizontal;
-          -webkit-box-direction: normal;
-          -webkit-flex-direction: row;
-              -ms-flex-direction: row;
-                  flex-direction: row;
-          -webkit-flex-wrap: wrap;
-              -ms-flex-wrap: wrap;
-                  flex-wrap: wrap;
-          width: calc(100% - 68px);
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            width: calc(100% - 68px);
         }
         .tabs-header li {
-          -webkit-transition: 0.3s ease;
-                  transition: 0.3s ease;
+            transition: 0.3s ease;
+            list-style: none;
         }
         .tabs-header a {
-          z-index: 1;
-          display: block;
-          box-sizing: border-box;
-          padding: 15px 20px;
-          color: #FFFFFF;
-          font-weight: 500;
-          text-decoration: none;
-          text-transform: uppercase;
-        }
-        .tabs-nav {
-          position: absolute;
-          top: 0;
-          right: 0;
-          background: #4285F4;
-          display: -webkit-box;
-          display: -webkit-flex;
-          display: -ms-flexbox;
-          display: flex;
-          -webkit-box-align: center;
-          -webkit-align-items: center;
-              -ms-flex-align: center;
-                  align-items: center;
-          height: 100%;
-          padding: 0 10px;
-          color: #FFFFFF;
-          -webkit-user-select: none;
-             -moz-user-select: none;
-              -ms-user-select: none;
-                  user-select: none;
-        }
-        .tabs-nav:before {
-          content: '';
-          z-index: 1;
-          position: absolute;
-          top: 0;
-          left: 0;
-          height: 100%;
-          box-shadow: 0 0 20px 10px #4285F4;
-        }
-        .tabs-nav i {
-          border-radius: 100%;
-          cursor: pointer;
+            display: block;
+            box-sizing: border-box;
+            padding: 15px 20px;
+            color: #FFFFFF;
+            font-weight: 500;
+            text-decoration: none;
+            text-transform: uppercase;
+            letter-spacing: 2px;
         }
         .tabs-content {
-          position: relative;
-          padding: 15px 20px;
-          -webkit-transition: 0.3s ease;
-                  transition: 0.3s ease;
-          overflow: hidden;
+            margin: 0 10px 20px 10px;
+            position: relative;
+            transition: 0.3s ease;
+            overflow: hidden;
+
+            background-color: #e6e6e6;
         }
         .tabs-content:after {
-          content: '';
-          position: absolute;
-          bottom: -1px;
-          left: 0;
-          display: block;
-          width: 100%;
-          height: 1px;
-          box-shadow: 0 0 20px 10px #FFFFFF;
+            content: '';
+            position: absolute;
+            bottom: -1px;
+            left: 0;
+            display: block;
+            width: 100%;
+            height: 1px;
+            box-shadow: 0 0 20px 10px #FFFFFF;
         }
         .tabs-content .tab {
-          display: none;
+            display: none;
         }
         .tabs-content .tab.active {
-          display: block;
+            display: block;
+        }
+        .tabs-content .note_area{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 60px;
+            width: 500px;
+            margin: 15px auto;
+            border-radius: 30px;
+            background-color: #4285f4;
+        }
+        .tabs-content .note_area p{
+            margin: 0;
+            color: white;
+        }
+        .tabs-content .display_area{
+
+        }
+        .tabs-content .input_area{
+            position: relative;
+            bottom: 0;
+            height: 210px;
+            width: 100%;
+        }
+        .tabs-content .input_area .input_hr{
+            align-items:center;
+            width:740px;
+            color: #d3d3d3;
+            margin: 0 auto 8px auto;
+        }
+        .tabs-content .input_area .textedit_area{
+            position: absolute;
+            bottom: 0;
+            height: 180px;
+            width: 600px;
+            margin-left: 20px;
+        }
+        .tabs-content .input_area .textedit{
+            margin:10px auto;
+            width: 98%;
+            height: 80%;
+            position: absolute;
+            font-size: 20px;
+        }
+        .tabs-content .input_area .input_area_right{
+            bottom: 0;
+            height: 180px;
+            width: 150px;
+            float: right;
+        }
+        .tabs-content .input_area .button{
+            width: 100px;
+            height: 34px;
+            background: #4285f4;
+            padding-top: 0;
+            padding-left: 10px;
+            margin-top: 126px;
+            margin-left: 16px;
+            color: white;
+            text-align: center;
+            line-height: 32px;
+            font-size: 16px;
+            cursor: pointer;
+            letter-spacing: 5px;
+            border-width: 1px;
+            border-radius: 10px;
         }
     </style>
 {% endblock %}
@@ -157,99 +168,170 @@
             <div class="tabs-header">
                 <div class="border"></div>
                 <ul>
-                    <li class="active"><a href="#tab-1" tab-id="1" ripple="ripple" ripple-color="#FFF">Tab 1</a></li>
-                    <li><a href="#tab-2" tab-id="2" ripple="ripple" ripple-color="#FFF">Tab 2</a></li>
+                    <li class="active"><a href="#tab-1" tab-id="1" ripple="ripple" ripple-color="#FFF">公共留言板</a></li>
+                    <li><a href="#tab-2" tab-id="2" ripple="ripple" ripple-color="#FFF">私信我们</a></li>
                 </ul>
-                <nav class="tabs-nav"><i id="prev" ripple="ripple" ripple-color="#FFF" class="material-icons">&#xE314;</i><i id="next" ripple="ripple" ripple-color="#FFF" class="material-icons">&#xE315;</i></nav>
             </div>
             <div class="tabs-content">
-                <div tab-id="1" class="tab active">1. 第一句</div>
-                <div tab-id="2" class="tab">2. 第二句.</div>
+                <div tab-id="1" class="tab active">
+                    <div class="note_area">
+                        <p align="center">这里为公共留言板，请理性，礼貌发言。</p>
+                    </div>
+                    <div class="display_area">
+                    </div>
+                    <div class="input_area">
+                        <hr class="input_hr">
+                        <label style="display: block;margin-left: 20px;float:left;width:200px;">请输入您的留言：</label>
+                        <label class="limit" style="float:left;width:200px;margin-left: 350px;">0/140</label>
+                        <div class="textedit_area">
+                            <textarea class="textedit" type="text" name="message" placeholder="输入留言（140字以内）" maxlength="140"></textarea>
+                        </div>
+                        <div class="input_area_right">
+                            <input type="submit" value="提交" class="button" onclick="postMessage('public')">
+                        </div>
+                    </div>
+                </div>
+                <div tab-id="2" class="tab">
+                    <div class="note_area">
+                        <p align="center">这里的留言将只有网站的管理者可见。</p>
+                    </div>
+                    <div class="input_area">
+                        <hr class="input_hr">
+                        <label style="display: block;margin-left: 20px;float:left;width:200px;">请输入您的留言：</label>
+                        <label class="limit" style="float:left;width:200px;margin-left: 350px;">0/140</label>
+                        <div class="textedit_area">
+                            <textarea class="textedit" type="text" name="message" placeholder="输入留言（140字以内）" maxlength="140"></textarea>
+                        </div>
+                        <div class="input_area_right">
+                            <input type="submit" value="提交" class="button" onclick="postMessage('private')">
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </article>
 {% endblock %}
 
 {% block scripts %}
-<script>
-$(document).ready(function () {
-	var activePos = $('.tabs-header .active').position();
-	function changePos() {
-		activePos = $('.tabs-header .active').position();
-		$('.border').stop().css({
-			left: activePos.left,
-			width: $('.tabs-header .active').width()
-		});
-	}
-	changePos();
-	var tabHeight = $('.tab.active').height();
-	function animateTabHeight() {
-		tabHeight = $('.tab.active').height();
-		$('.tabs-content').stop().css({ height: tabHeight + 'px' });
-	}
-	animateTabHeight();
-	function changeTab() {
-		var getTabId = $('.tabs-header .active a').attr('tab-id');
-		$('.tab').stop().fadeOut(300, function () {
-			$(this).removeClass('active');
-		}).hide();
-		$('.tab[tab-id=' + getTabId + ']').stop().fadeIn(300, function () {
-			$(this).addClass('active');
-			animateTabHeight();
-		});
-	}
-	$('.tabs-header a').on('click', function (e) {
-		e.preventDefault();
-		var tabId = $(this).attr('tab-id');
-		$('.tabs-header a').stop().parent().removeClass('active');
-		$(this).stop().parent().addClass('active');
-		changePos();
-		tabCurrentItem = tabItems.filter('.active');
-		$('.tab').stop().fadeOut(300, function () {
-			$(this).removeClass('active');
-		}).hide();
-		$('.tab[tab-id="' + tabId + '"]').stop().fadeIn(300, function () {
-			$(this).addClass('active');
-			animateTabHeight();
-		});
-	});
-	var tabItems = $('.tabs-header ul li');
-	var tabCurrentItem = tabItems.filter('.active');
-	$('#next').on('click', function (e) {
-		e.preventDefault();
-		var nextItem = tabCurrentItem.next();
-		tabCurrentItem.removeClass('active');
-		if (nextItem.length) {
-			tabCurrentItem = nextItem.addClass('active');
-		} else {
-			tabCurrentItem = tabItems.first().addClass('active');
-		}
-		changePos();
-		changeTab();
-	});
-	$('#prev').on('click', function (e) {
-		e.preventDefault();
-		var prevItem = tabCurrentItem.prev();
-		tabCurrentItem.removeClass('active');
-		if (prevItem.length) {
-			tabCurrentItem = prevItem.addClass('active');
-		} else {
-			tabCurrentItem = tabItems.last().addClass('active');
-		}
-		changePos();
-		changeTab();
-	});
-	$('[ripple]').on('click', function (e) {
-		var rippleDiv = $('<div class="ripple" />'), rippleOffset = $(this).offset(), rippleY = e.pageY - rippleOffset.top, rippleX = e.pageX - rippleOffset.left, ripple = $('.ripple');
-		rippleDiv.css({
-			top: rippleY - ripple.height() / 2,
-			left: rippleX - ripple.width() / 2,
-			background: $(this).attr('ripple-color')
-		}).appendTo($(this));
-		window.setTimeout(function () {
-			rippleDiv.remove();
-		}, 1500);
-	});
-});
-</script>
+    <script src="/static/js/changeTab.js"></script>
+    <script>
+        function showLetterNum($input) {
+            $input.find("textarea").on("input propertychange", function() {
+                $input.find(".limit").text($(this).val().length+'/140');
+                if ($input.find("textarea").val()===''){
+                    $input.find(".button").attr("disabled",true);
+                    $input.find(".button").css("background-color","#c0c0c0");
+                }
+                else{
+                    $input.find(".button").attr("disabled",false);
+                    $input.find(".button").css("background-color","#4285f4");
+                }
+            });
+        }
+        showLetterNum($('div.tab.active'));
+        showLetterNum($('div.tab').not('.active'));
+        $(document).ready(function () {
+            $('div.tab.active').find(".limit").text($('div.tab.active').find("textarea").val().length+'/140');
+            $('div.tab').not('.active').find(".limit").text($('div.tab').not('.active').find("textarea").val().length+'/140');
+        });
+
+        //提交留言：
+        function postMessage(type) {
+            if(type==='public') {        //公共留言
+                $.ajax({
+                    type: "POST",
+                    url: "/postPublicMessage",
+                    data: {
+                        "username":{{ request.session.user_name }}+'',
+                        "message": $('div.active textarea').val(),
+                        csrfmiddlewaretoken: '{{ csrf_token }}'
+                    },
+                    success: function (result) {
+                        $('div.active textarea').val('');
+                        $('div.active .button').attr("disabled",true);
+                        $('div.active .limit').text('0/140');
+                        getMessage("public",1);
+                    }
+                });
+            }
+            else if(type==='private'){  //私信
+                $.ajax({
+                    type:"POST",
+                    url:"/postPrivateMessage",
+                    data:{"username":{{ request.session.user_name }}+'',
+                            "message":$('div.active textarea').val(),
+                             csrfmiddlewaretoken: '{{ csrf_token }}'},
+                    success:function(result) {
+                        $('div.active textarea').val('');
+                        $('div.active .button').attr("disabled",true);
+                        $('div.active .limit').text('0/140');
+                    }
+                });
+            }
+        }
+
+        //获取数据库中的留言：
+        function getMessage(type,page) {
+            if(type==='public') {        //公共留言
+                $.ajax({
+                    type: "POST",
+                    url: "/getPublicMessage",
+                    data: {
+                        "page":page,
+                        csrfmiddlewaretoken: '{{ csrf_token }}'
+                    },
+                    success: function (result) {
+                        var messages=JSON.parse(result.message_list);
+                        var str='';
+                        $('div.active textarea').text(messages);
+                        var dayReg=/^\d{4}-\d{2}-\d{2}/;
+                        var timeReg=/\d{2}:\d{2}:\d{2}/;
+                        for(var i=messages.length-1;i>-1;i--){
+                            str+='<hr class="input_hr">';
+                            str+='<div class="single_message">';
+                            str+='<p class="message_word"><span style="color:blue">'+messages[i]["fields"]["username"]+"</span>："+messages[i]["fields"]["content"]+'</p>';
+                            var timeStr=messages[i]["fields"]["time"];
+                            var day=dayReg.exec(timeStr);
+                            var time=timeReg.exec(timeStr);
+                            str+='<p style="color:#646464;font-size:8px">'+day+" "+time+"</p>";
+                            str+='</div>';
+                        }
+                        $('div.active .display_area').html(str);
+                        $('div.active .display_area .input_hr').css({
+                            "align-items":"center",
+                            "width":"740px",
+                            "color": "#d3d3d3",
+                            "margin": "0 auto 8px auto"
+                        });
+                        $('div.active .display_area .single_message').css({
+                            "width":"80%",
+
+                            "margin": "0 auto 8px auto"
+                        });
+                        $('div.active .display_area .message_word').css({
+                            "word-break":"normal",
+                            "white-space":"pre-line",
+                            "word-wrapL":"break-word"
+                        });
+                    }
+                });
+            }
+            else if(type==='private'){  //私信
+                $.ajax({
+                    type:"POST",
+                    url:"/getPrivateMessage",
+                    data:{
+                            "page":page,
+                             csrfmiddlewaretoken: '{{ csrf_token }}'
+                    },
+                    success:function(result) {
+                        var r=result.message_list;
+                        $('div.active textarea').text(r);
+                    }
+                });
+            }
+        }
+
+        getMessage("public",1);
+    </script>
 {% endblock %}
