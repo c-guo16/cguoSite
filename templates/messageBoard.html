@@ -16,7 +16,6 @@
             border-radius: 100%;
             animation: ripple 1.6s;
         }
-
         @keyframes ripple {
             0% {
                 transform: scale(1);
@@ -27,6 +26,48 @@
                 opacity: 0;
             }
         }
+        .delete_mask{
+            position: absolute;
+            display: none;
+            z-index: 10000;
+        }
+        .tabs .delete_window{
+            position: absolute;
+            width: 240px;
+            height: 150px;
+            box-shadow: darkgrey 0 0 8px 1px;
+            background: #f8f8f8;
+            border-radius: 5px;
+            left:0;top:0;right: 0;bottom: 0;
+            margin: auto;
+            display: none;
+            z-index: 10001;
+            text-align: center;
+        }
+        .tabs .delete_window .confirm_button{
+            height: 30px;
+            width:80px;
+            border-radius: 3px;
+            border: 1px solid #cdcdcd;
+            cursor: pointer;
+        }
+        .tabs .delete_window .confirm_button p{
+            margin: 5px auto auto 4px;
+            font-size: 15px;
+            letter-spacing: 5px;
+        }
+        .tabs .delete_window .confirm_button.confirm{
+            background-color: #4285f4;
+            color: white;
+            float:left;
+            margin-left: 30px;
+        }
+        .tabs .delete_window .confirm_button.cancel{
+            background-color: white;
+            color: black;
+            float: right;
+            margin-right: 30px;
+        }
         .tabs {
             position: relative;
             background: #4285f4;
@@ -34,6 +75,27 @@
             margin: 100px auto 10px;
             overflow: hidden;
             border-radius: 10px;
+        }
+        .tabs .note_dynamic{
+            position: absolute;
+            background: #333333;
+            width: 200px;
+            height: 100px;
+            border-radius: 30px;
+            left:0;top:0;right: 0;bottom: 0;
+            margin: auto;
+            display: none;
+            z-index:1000;
+        }
+        .tabs .note_dynamic span{
+            width: 70%;
+            height: 30%;
+            position: absolute;
+            color: white;
+            font-size: 20px;
+            letter-spacing: 5px;
+            margin: auto;
+            left: 0;top:0;right: 0;bottom: 0;
         }
         .tabs-header {
             position: relative;
@@ -74,8 +136,7 @@
             position: relative;
             transition: 0.3s ease;
             overflow: hidden;
-
-            background-color: #e6e6e6;
+            background-color: #f8f8f8;
         }
         .tabs-content:after {
             content: '';
@@ -107,8 +168,9 @@
             margin: 0;
             color: white;
         }
-        .tabs-content .display_area{
-
+        .tabs-content .changePage_area{
+            text-align: center;
+            margin: 20px auto 10px auto;
         }
         .tabs-content .input_area{
             position: relative;
@@ -162,9 +224,21 @@
     </style>
 {% endblock %}
 
+{% block mask %}
+    <div class="delete_mask"></div>
+{% endblock %}
+
 {% block content %}
     <article class="htmleaf-container">
         <div class="tabs">
+            <div class="note_dynamic"><span>✔ 留言成功</span></div>
+            <div class="delete_window">
+                <p style="margin-top: 35px;margin-bottom: 35px">确定删除该留言？</p>
+                <div>
+                    <div class="confirm_button confirm"><p>确定</p></div>
+                    <div class="confirm_button cancel"><p>取消</p></div>
+                </div>
+            </div>
             <div class="tabs-header">
                 <div class="border"></div>
                 <ul>
@@ -173,11 +247,13 @@
                 </ul>
             </div>
             <div class="tabs-content">
-                <div tab-id="1" class="tab active">
+                <div tab-id="1" class="tab active" id="public">
                     <div class="note_area">
                         <p align="center">这里为公共留言板，请理性，礼貌发言。</p>
                     </div>
                     <div class="display_area">
+                    </div>
+                    <div class="changePage_area">
                     </div>
                     <div class="input_area">
                         <hr class="input_hr">
@@ -191,9 +267,13 @@
                         </div>
                     </div>
                 </div>
-                <div tab-id="2" class="tab">
+                <div tab-id="2" class="tab" id="private">
                     <div class="note_area">
                         <p align="center">这里的留言将只有网站的管理者可见。</p>
+                    </div>
+                    <div class="display_area">
+                    </div>
+                    <div class="changePage_area">
                     </div>
                     <div class="input_area">
                         <hr class="input_hr">
@@ -213,8 +293,12 @@
 {% endblock %}
 
 {% block scripts %}
-    <script src="/static/js/changeTab.js"></script>
     <script>
+        var vars={
+            csrf_token:'{{ csrf_token }}',
+            user_name:'{{ request.session.user_name }}',
+            current_page:-1
+        };
         function showLetterNum($input) {
             $input.find("textarea").on("input propertychange", function() {
                 $input.find(".limit").text($(this).val().length+'/140');
@@ -233,105 +317,31 @@
         $(document).ready(function () {
             $('div.tab.active').find(".limit").text($('div.tab.active').find("textarea").val().length+'/140');
             $('div.tab').not('.active').find(".limit").text($('div.tab').not('.active').find("textarea").val().length+'/140');
+            if('{{ request.session.user_name }}'===''){
+                str='';
+                str += '<hr class="input_hr">';
+                str +='<p style="text-align:center">您未登录，留言将不会在此处显示</p>';
+                $('div#private .display_area').html(str);
+                $('div#private .display_area .input_hr').css({
+                    "align-items":"center",
+                    "width":"740px",
+                    "color": "#d3d3d3",
+                    "margin": "0 auto 8px auto"
+                });
+            }
+            else{
+                getMessage("private",1);
+            }
+            getMessage("public",1);
+
+            //绑定取消删除按钮的点击事件：
+            $('.tabs .delete_window .cancel').on("click",function () {
+                $('.tabs .delete_window').css("display","none");
+                $('.delete_mask').css("display","none");
+                $('.tabs .delete_window .confirm').off("click");
+            });
         });
-
-        //提交留言：
-        function postMessage(type) {
-            if(type==='public') {        //公共留言
-                $.ajax({
-                    type: "POST",
-                    url: "/postPublicMessage",
-                    data: {
-                        "username":{{ request.session.user_name }}+'',
-                        "message": $('div.active textarea').val(),
-                        csrfmiddlewaretoken: '{{ csrf_token }}'
-                    },
-                    success: function (result) {
-                        $('div.active textarea').val('');
-                        $('div.active .button').attr("disabled",true);
-                        $('div.active .limit').text('0/140');
-                        getMessage("public",1);
-                    }
-                });
-            }
-            else if(type==='private'){  //私信
-                $.ajax({
-                    type:"POST",
-                    url:"/postPrivateMessage",
-                    data:{"username":{{ request.session.user_name }}+'',
-                            "message":$('div.active textarea').val(),
-                             csrfmiddlewaretoken: '{{ csrf_token }}'},
-                    success:function(result) {
-                        $('div.active textarea').val('');
-                        $('div.active .button').attr("disabled",true);
-                        $('div.active .limit').text('0/140');
-                    }
-                });
-            }
-        }
-
-        //获取数据库中的留言：
-        function getMessage(type,page) {
-            if(type==='public') {        //公共留言
-                $.ajax({
-                    type: "POST",
-                    url: "/getPublicMessage",
-                    data: {
-                        "page":page,
-                        csrfmiddlewaretoken: '{{ csrf_token }}'
-                    },
-                    success: function (result) {
-                        var messages=JSON.parse(result.message_list);
-                        var str='';
-                        $('div.active textarea').text(messages);
-                        var dayReg=/^\d{4}-\d{2}-\d{2}/;
-                        var timeReg=/\d{2}:\d{2}:\d{2}/;
-                        for(var i=messages.length-1;i>-1;i--){
-                            str+='<hr class="input_hr">';
-                            str+='<div class="single_message">';
-                            str+='<p class="message_word"><span style="color:blue">'+messages[i]["fields"]["username"]+"</span>："+messages[i]["fields"]["content"]+'</p>';
-                            var timeStr=messages[i]["fields"]["time"];
-                            var day=dayReg.exec(timeStr);
-                            var time=timeReg.exec(timeStr);
-                            str+='<p style="color:#646464;font-size:8px">'+day+" "+time+"</p>";
-                            str+='</div>';
-                        }
-                        $('div.active .display_area').html(str);
-                        $('div.active .display_area .input_hr').css({
-                            "align-items":"center",
-                            "width":"740px",
-                            "color": "#d3d3d3",
-                            "margin": "0 auto 8px auto"
-                        });
-                        $('div.active .display_area .single_message').css({
-                            "width":"80%",
-
-                            "margin": "0 auto 8px auto"
-                        });
-                        $('div.active .display_area .message_word').css({
-                            "word-break":"normal",
-                            "white-space":"pre-line",
-                            "word-wrapL":"break-word"
-                        });
-                    }
-                });
-            }
-            else if(type==='private'){  //私信
-                $.ajax({
-                    type:"POST",
-                    url:"/getPrivateMessage",
-                    data:{
-                            "page":page,
-                             csrfmiddlewaretoken: '{{ csrf_token }}'
-                    },
-                    success:function(result) {
-                        var r=result.message_list;
-                        $('div.active textarea').text(r);
-                    }
-                });
-            }
-        }
-
-        getMessage("public",1);
     </script>
+    <script src="/static/js/changeTab.js"></script>
+    <script src="/static/js/manageMessage.js"></script>
 {% endblock %}

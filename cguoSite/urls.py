@@ -39,10 +39,11 @@ urlpatterns = [
     path('postUserInfo',mpviews.sendUserInfo),
 
     #留言板功能：
-    path('getPublicMessage',mbviews.sendPublicMessage),
-    path('getPrivateMessage',mbviews.sendPrivateMessage),
-    path('postPublicMessage',mbviews.getPublicMessage),
-    path('postPrivateMessage',mbviews.getPrivateMessage)
+    path('getPublicMessage',mbviews.sendMessage,{"type":"public"}),
+    path('getPrivateMessage',mbviews.sendMessage,{"type":"private"}),
+    path('postPublicMessage',mbviews.getMessage,{"type":"public"}),
+    path('postPrivateMessage',mbviews.getMessage,{"type":"private"}),
+    path('postDeleteMessage',mbviews.delMessage)
 ]
 
 urlpatterns += staticfiles_urlpatterns()

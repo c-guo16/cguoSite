@@ -2,23 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="93b5aa65-ed0e-4674-8b26-e992d706ab41" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/js/changeTab.js" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mainPage/send_email.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/css/index.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/css/styles.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/jiaoben3818/css/default.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/jiaoben3818/css/reset.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/jiaoben3818/css/styles.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/jiaoben3818/fonts/icomoon.eot" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/jiaoben3818/fonts/icomoon.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/jiaoben3818/fonts/icomoon.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/jiaoben3818/fonts/icomoon.woff" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/jiaoben3818/index1.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/jiaoben3818/js/jquery-2.1.1.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/jiaoben3818/js/stopExecutionOnTimeout.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/jiaoben3818/说明.htm" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/jiaoben3818/说明.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/jiaoben5153.rar" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/js/manageMessage.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db.sqlite3" afterPath="$PROJECT_DIR$/db.sqlite3" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources/baf27898-b12f-4b76-a7d1-9d3af16247d9.xml" afterPath="$PROJECT_DIR$/.idea/dataSources/baf27898-b12f-4b76-a7d1-9d3af16247d9.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
@@ -26,7 +10,7 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cguoSite/urls.py" afterPath="$PROJECT_DIR$/cguoSite/urls.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/messageBoard/models.py" afterPath="$PROJECT_DIR$/messageBoard/models.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/messageBoard/views.py" afterPath="$PROJECT_DIR$/messageBoard/views.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/css/base.css" afterPath="$PROJECT_DIR$/static/css/base.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/base.html" afterPath="$PROJECT_DIR$/templates/base.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/messageBoard.html" afterPath="$PROJECT_DIR$/templates/messageBoard.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -78,24 +62,6 @@
         <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
       </PATH_ELEMENT>
     </PATH>
-    <PATH>
-      <PATH_ELEMENT>
-        <option name="myItemId" />
-        <option name="myItemType" value="com.intellij.database.view.DatabaseStructure$Root" />
-      </PATH_ELEMENT>
-      <PATH_ELEMENT>
-        <option name="myItemId" value="db" />
-        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
-      </PATH_ELEMENT>
-      <PATH_ELEMENT>
-        <option name="myItemId" value="main" />
-        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
-      </PATH_ELEMENT>
-      <PATH_ELEMENT>
-        <option name="myItemId" value="messageBoard_publicmessage" />
-        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
-      </PATH_ELEMENT>
-    </PATH>
   </component>
   <component name="DjangoConsoleOptions" custom-start-script="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)">
     <option name="myCustomStartScript" value="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)" />
@@ -106,8 +72,8 @@
       <file leaf-file-name="urls.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/cguoSite/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="297">
-              <caret line="42" column="57" lean-forward="true" selection-start-line="42" selection-start-column="57" selection-end-line="42" selection-end-column="57" />
+            <state relative-caret-position="247">
+              <caret line="45" column="47" lean-forward="false" selection-start-line="45" selection-start-column="47" selection-end-line="45" selection-end-column="47" />
               <folding>
                 <element signature="e#632#664#0" expanded="true" />
               </folding>
@@ -115,25 +81,15 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="views.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/messageBoard/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="220">
-              <caret line="34" column="49" lean-forward="false" selection-start-line="34" selection-start-column="49" selection-end-line="34" selection-end-column="49" />
+            <state relative-caret-position="-54">
+              <caret line="28" column="0" lean-forward="false" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
               <folding>
-                <element signature="e#0#35#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="userManage.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mainPage/userManage.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-81">
-              <caret line="24" column="30" lean-forward="true" selection-start-line="24" selection-start-column="30" selection-end-line="24" selection-end-column="30" />
-              <folding>
-                <element signature="e#0#57#0" expanded="true" />
+                <element signature="e#0#48#0" expanded="true" />
+                <element signature="e#355#397#0" expanded="false" />
+                <element signature="e#2448#3135#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -142,19 +98,90 @@
       <file leaf-file-name="messageBoard.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/messageBoard.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="288">
-              <caret line="295" column="84" lean-forward="true" selection-start-line="295" selection-start-column="84" selection-end-line="295" selection-end-column="84" />
+            <state relative-caret-position="139">
+              <caret line="236" column="21" lean-forward="true" selection-start-line="236" selection-start-column="21" selection-end-line="236" selection-end-column="21" />
               <folding>
-                <element signature="e#5169#5233#0#HTML" expanded="true" />
-                <element signature="e#5296#5346#0#HTML" expanded="true" />
-                <element signature="e#5841#6783#0#HTML" expanded="false" />
-                <element signature="e#6127#6191#0#HTML" expanded="true" />
-                <element signature="e#6254#6304#0#HTML" expanded="true" />
-                <element signature="e#6973#7553#0#HTML" expanded="false" />
-                <element signature="e#7688#7937#0#HTML" expanded="false" />
-                <element signature="e#7992#9412#0#HTML" expanded="false" />
-                <element signature="e#11748#12231#0#HTML" expanded="false" />
-                <marker date="1550749370613" expanded="false" signature="6134:6166" ph="..." />
+                <element signature="e#122#219#0#HTML" expanded="false" />
+                <element signature="e#245#441#0#HTML" expanded="false" />
+                <element signature="e#450#676#0#HTML" expanded="false" />
+                <element signature="e#697#795#0#HTML" expanded="false" />
+                <element signature="e#824#1189#0#HTML" expanded="false" />
+                <element signature="e#1234#1395#0#HTML" expanded="false" />
+                <element signature="e#1442#1554#0#HTML" expanded="false" />
+                <element signature="e#1607#1738#0#HTML" expanded="false" />
+                <element signature="e#1790#1922#0#HTML" expanded="false" />
+                <element signature="e#1937#2139#0#HTML" expanded="false" />
+                <element signature="e#2167#2453#0#HTML" expanded="false" />
+                <element signature="e#2486#2738#0#HTML" expanded="false" />
+                <element signature="e#2760#2866#0#HTML" expanded="false" />
+                <element signature="e#2896#3101#0#HTML" expanded="false" />
+                <element signature="e#3126#3264#0#HTML" expanded="false" />
+                <element signature="e#3289#3365#0#HTML" expanded="false" />
+                <element signature="e#3389#3661#0#HTML" expanded="false" />
+                <element signature="e#3684#3869#0#HTML" expanded="false" />
+                <element signature="e#3898#4138#0#HTML" expanded="false" />
+                <element signature="e#4166#4204#0#HTML" expanded="false" />
+                <element signature="e#4239#4278#0#HTML" expanded="false" />
+                <element signature="e#4311#4574#0#HTML" expanded="false" />
+                <element signature="e#4609#4669#0#HTML" expanded="false" />
+                <element signature="e#4708#4792#0#HTML" expanded="false" />
+                <element signature="e#4826#4944#0#HTML" expanded="false" />
+                <element signature="e#4988#5121#0#HTML" expanded="false" />
+                <element signature="e#5170#5320#0#HTML" expanded="false" />
+                <element signature="e#5364#5515#0#HTML" expanded="false" />
+                <element signature="e#5567#5680#0#HTML" expanded="false" />
+                <element signature="e#5722#6184#0#HTML" expanded="false" />
+                <element signature="e#6493#6537#0#HTML" expanded="true" />
+                <element signature="e#9707#10287#0#HTML" expanded="false" />
+                <element signature="e#9783#10275#0#HTML" expanded="false" />
+                <marker date="1550935252387" expanded="false" signature="8762:8794" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="settings.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/cguoSite/settings.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="270">
+              <caret line="27" column="21" lean-forward="true" selection-start-line="27" selection-start-column="21" selection-end-line="27" selection-end-column="21" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="manageMessage.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/static/js/manageMessage.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-29">
+              <caret line="152" column="44" lean-forward="false" selection-start-line="152" selection-start-column="44" selection-end-line="152" selection-end-column="44" />
+              <folding>
+                <element signature="n#!!doc;n#display_note_dynamic#0" expanded="false" />
+                <element signature="n#!!block;n#display_note_dynamic#0" expanded="false" />
+                <element signature="n#!!block;n#postMessage#0" expanded="false" />
+                <element signature="n#!!block;n#change_page#0" expanded="false" />
+                <element signature="e#3703#3954#0" expanded="false" />
+                <element signature="e#4010#4191#0" expanded="false" />
+                <element signature="e#4032#4183#0" expanded="false" />
+                <element signature="e#4204#4714#0" expanded="false" />
+                <element signature="e#4226#4365#0" expanded="false" />
+                <element signature="e#4435#4571#0" expanded="false" />
+                <element signature="e#4622#4706#0" expanded="false" />
+                <element signature="e#4763#4835#0" expanded="false" />
+                <element signature="e#4872#4974#0" expanded="false" />
+                <element signature="e#5012#5114#0" expanded="false" />
+                <element signature="e#5250#5428#0" expanded="false" />
+                <element signature="e#5347#5420#0" expanded="false" />
+                <element signature="e#5459#5639#0" expanded="false" />
+                <element signature="e#5558#5631#0" expanded="false" />
+                <element signature="n#!!block;n#display_messages#0" expanded="false" />
+                <element signature="n#!!block;n#getMessage#0" expanded="false" />
+                <element signature="n#!!block;n#deleteMessage#0" expanded="false" />
+                <element signature="n#!!block;n#deleteMessage_confirm#0" expanded="false" />
+                <marker date="1550935177227" expanded="true" signature="5857:5874" ph="..." />
+                <marker date="1550935177227" expanded="true" signature="6349:6359" ph="..." />
+                <marker date="1550935177227" expanded="true" signature="6483:6510" ph="..." />
+                <marker date="1550935177227" expanded="true" signature="9573:9590" ph="..." />
               </folding>
             </state>
           </provider>
@@ -163,8 +190,8 @@
       <file leaf-file-name="signUp.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/signUp.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1053">
-              <caret line="259" column="44" lean-forward="true" selection-start-line="259" selection-start-column="44" selection-end-line="259" selection-end-column="44" />
+            <state relative-caret-position="27">
+              <caret line="259" column="44" lean-forward="false" selection-start-line="259" selection-start-column="44" selection-end-line="259" selection-end-column="44" />
               <folding />
             </state>
           </provider>
@@ -180,6 +207,12 @@
         <option value="JavaScript File" />
       </list>
     </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>str</find>
+      <find>getMessage</find>
+    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -203,15 +236,17 @@
         <option value="$PROJECT_DIR$/mainPage/userManage.py" />
         <option value="$PROJECT_DIR$/templates/userInfo.html" />
         <option value="$PROJECT_DIR$/templates/index1.html" />
-        <option value="$PROJECT_DIR$/templates/base.html" />
         <option value="$PROJECT_DIR$/static/css/base.css" />
         <option value="$PROJECT_DIR$/static/js/changeTab.js" />
         <option value="$PROJECT_DIR$/mainPage/views.py" />
-        <option value="$PROJECT_DIR$/cguoSite/urls.py" />
-        <option value="$PROJECT_DIR$/cguoSite/settings.py" />
         <option value="$PROJECT_DIR$/messageBoard/models.py" />
-        <option value="$PROJECT_DIR$/templates/messageBoard.html" />
+        <option value="$PROJECT_DIR$/templates/base.html" />
+        <option value="$PROJECT_DIR$/static/js/deleteMessage.js" />
+        <option value="$PROJECT_DIR$/cguoSite/urls.py" />
         <option value="$PROJECT_DIR$/messageBoard/views.py" />
+        <option value="$PROJECT_DIR$/static/js/manageMessage.js" />
+        <option value="$PROJECT_DIR$/templates/messageBoard.html" />
+        <option value="$PROJECT_DIR$/cguoSite/settings.py" />
       </list>
     </option>
   </component>
@@ -244,7 +279,6 @@
     </navigator>
     <panes>
       <pane id="Scratches" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -365,6 +399,7 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -606,10 +641,10 @@
     <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20121029" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.204236" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1709531" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17019667" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32923076" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3276923" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3323077" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -652,12 +687,110 @@
           <line>69</line>
           <option name="timeStamp" value="16" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/messageBoard/views.py</url>
+          <line>49</line>
+          <option name="timeStamp" value="26" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/messageBoard/views.py</url>
+          <line>28</line>
+          <option name="timeStamp" value="27" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/messageBoard/views.py</url>
+          <line>31</line>
+          <option name="timeStamp" value="28" />
+        </line-breakpoint>
       </breakpoints>
-      <option name="time" value="22" />
+      <option name="time" value="29" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/cguoSite/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1026">
+          <caret line="42" column="57" lean-forward="false" selection-start-line="42" selection-start-column="57" selection-end-line="42" selection-end-column="57" />
+          <folding>
+            <element signature="e#632#664#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mainPage/userManage.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="648">
+          <caret line="24" column="30" lean-forward="false" selection-start-line="24" selection-start-column="30" selection-end-line="24" selection-end-column="30" />
+          <folding>
+            <element signature="e#0#57#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/messageBoard.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="7965">
+          <caret line="295" column="84" lean-forward="false" selection-start-line="295" selection-start-column="84" selection-end-line="295" selection-end-column="84" />
+          <folding>
+            <element signature="e#122#219#0#HTML" expanded="false" />
+            <element signature="e#245#441#0#HTML" expanded="false" />
+            <element signature="e#450#676#0#HTML" expanded="false" />
+            <element signature="e#697#795#0#HTML" expanded="false" />
+            <element signature="e#824#1189#0#HTML" expanded="false" />
+            <element signature="e#1234#1395#0#HTML" expanded="false" />
+            <element signature="e#1442#1554#0#HTML" expanded="false" />
+            <element signature="e#1607#1738#0#HTML" expanded="false" />
+            <element signature="e#1790#1922#0#HTML" expanded="false" />
+            <element signature="e#1937#2139#0#HTML" expanded="false" />
+            <element signature="e#2167#2453#0#HTML" expanded="false" />
+            <element signature="e#2486#2738#0#HTML" expanded="false" />
+            <element signature="e#2760#2866#0#HTML" expanded="false" />
+            <element signature="e#2896#3101#0#HTML" expanded="false" />
+            <element signature="e#3126#3264#0#HTML" expanded="false" />
+            <element signature="e#3289#3365#0#HTML" expanded="false" />
+            <element signature="e#3389#3661#0#HTML" expanded="false" />
+            <element signature="e#3684#3869#0#HTML" expanded="false" />
+            <element signature="e#3898#4138#0#HTML" expanded="false" />
+            <element signature="e#4166#4204#0#HTML" expanded="false" />
+            <element signature="e#4239#4278#0#HTML" expanded="false" />
+            <element signature="e#4311#4574#0#HTML" expanded="false" />
+            <element signature="e#4609#4669#0#HTML" expanded="false" />
+            <element signature="e#4708#4792#0#HTML" expanded="false" />
+            <element signature="e#4826#4944#0#HTML" expanded="false" />
+            <element signature="e#4988#5121#0#HTML" expanded="false" />
+            <element signature="e#5170#5320#0#HTML" expanded="false" />
+            <element signature="e#5364#5515#0#HTML" expanded="false" />
+            <element signature="e#5567#5680#0#HTML" expanded="false" />
+            <element signature="e#5722#6184#0#HTML" expanded="false" />
+            <element signature="e#6493#6537#0#HTML" expanded="true" />
+            <element signature="e#9707#10287#0#HTML" expanded="false" />
+            <element signature="e#9783#10275#0#HTML" expanded="false" />
+            <marker date="1550935252387" expanded="false" signature="8762:8794" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/signUp.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="6993">
+          <caret line="259" column="44" lean-forward="false" selection-start-line="259" selection-start-column="44" selection-end-line="259" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/messageBoard/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="945">
+          <caret line="35" column="27" lean-forward="true" selection-start-line="35" selection-start-column="27" selection-end-line="35" selection-end-column="27" />
+          <folding>
+            <element signature="e#0#48#0" expanded="true" />
+            <element signature="e#355#397#0" expanded="false" />
+            <element signature="e#2448#3135#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/cguoSite/urls.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="675">
@@ -673,7 +806,9 @@
         <state relative-caret-position="297">
           <caret line="11" column="0" lean-forward="true" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
           <folding>
-            <element signature="e#0#35#0" expanded="true" />
+            <element signature="e#0#48#0" expanded="true" />
+            <element signature="e#355#397#0" expanded="false" />
+            <element signature="e#2448#3135#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -707,16 +842,40 @@
         <state relative-caret-position="6021">
           <caret line="223" column="13" lean-forward="true" selection-start-line="223" selection-start-column="13" selection-end-line="223" selection-end-column="13" />
           <folding>
-            <element signature="e#5169#5233#0#HTML" expanded="true" />
-            <element signature="e#5296#5346#0#HTML" expanded="true" />
-            <element signature="e#5841#6783#0#HTML" expanded="false" />
-            <element signature="e#6127#6191#0#HTML" expanded="true" />
-            <element signature="e#6254#6304#0#HTML" expanded="true" />
-            <element signature="e#6973#7553#0#HTML" expanded="false" />
-            <element signature="e#7688#7937#0#HTML" expanded="false" />
-            <element signature="e#7992#9412#0#HTML" expanded="false" />
-            <element signature="e#11748#12231#0#HTML" expanded="false" />
-            <marker date="1550749370613" expanded="false" signature="6134:6166" ph="..." />
+            <element signature="e#122#219#0#HTML" expanded="false" />
+            <element signature="e#245#441#0#HTML" expanded="false" />
+            <element signature="e#450#676#0#HTML" expanded="false" />
+            <element signature="e#697#795#0#HTML" expanded="false" />
+            <element signature="e#824#1189#0#HTML" expanded="false" />
+            <element signature="e#1234#1395#0#HTML" expanded="false" />
+            <element signature="e#1442#1554#0#HTML" expanded="false" />
+            <element signature="e#1607#1738#0#HTML" expanded="false" />
+            <element signature="e#1790#1922#0#HTML" expanded="false" />
+            <element signature="e#1937#2139#0#HTML" expanded="false" />
+            <element signature="e#2167#2453#0#HTML" expanded="false" />
+            <element signature="e#2486#2738#0#HTML" expanded="false" />
+            <element signature="e#2760#2866#0#HTML" expanded="false" />
+            <element signature="e#2896#3101#0#HTML" expanded="false" />
+            <element signature="e#3126#3264#0#HTML" expanded="false" />
+            <element signature="e#3289#3365#0#HTML" expanded="false" />
+            <element signature="e#3389#3661#0#HTML" expanded="false" />
+            <element signature="e#3684#3869#0#HTML" expanded="false" />
+            <element signature="e#3898#4138#0#HTML" expanded="false" />
+            <element signature="e#4166#4204#0#HTML" expanded="false" />
+            <element signature="e#4239#4278#0#HTML" expanded="false" />
+            <element signature="e#4311#4574#0#HTML" expanded="false" />
+            <element signature="e#4609#4669#0#HTML" expanded="false" />
+            <element signature="e#4708#4792#0#HTML" expanded="false" />
+            <element signature="e#4826#4944#0#HTML" expanded="false" />
+            <element signature="e#4988#5121#0#HTML" expanded="false" />
+            <element signature="e#5170#5320#0#HTML" expanded="false" />
+            <element signature="e#5364#5515#0#HTML" expanded="false" />
+            <element signature="e#5567#5680#0#HTML" expanded="false" />
+            <element signature="e#5722#6184#0#HTML" expanded="false" />
+            <element signature="e#6493#6537#0#HTML" expanded="true" />
+            <element signature="e#9707#10287#0#HTML" expanded="false" />
+            <element signature="e#9783#10275#0#HTML" expanded="false" />
+            <marker date="1550935252387" expanded="false" signature="8762:8794" ph="..." />
           </folding>
         </state>
       </provider>
@@ -873,14 +1032,6 @@
     <entry file="file://$PROJECT_DIR$/templates/index1.html" />
     <entry file="file://$PROJECT_DIR$/static/js/jiaoben3818/index1.html" />
     <entry file="file://$PROJECT_DIR$/static/css/index.css" />
-    <entry file="file://$PROJECT_DIR$/templates/base.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="81">
-          <caret line="3" column="6" lean-forward="true" selection-start-line="3" selection-start-column="6" selection-end-line="3" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/static/js/bootstrap.min.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-5670">
@@ -895,22 +1046,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mainPage/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="5" column="20" lean-forward="false" selection-start-line="5" selection-start-column="20" selection-end-line="5" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mainPage/send_email.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="7" column="12" lean-forward="true" selection-start-line="7" selection-start-column="12" selection-end-line="7" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/mainPage/send_email.py" />
     <entry file="file://$PROJECT_DIR$/static/js/changeTab.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="486">
@@ -930,7 +1066,6 @@
       <provider editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -943,7 +1078,6 @@
       <provider editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -961,39 +1095,58 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cguoSite/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-243">
-          <caret line="111" column="26" lean-forward="false" selection-start-line="111" selection-start-column="26" selection-end-line="111" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/messageBoard/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="6" column="48" lean-forward="true" selection-start-line="6" selection-start-column="48" selection-end-line="6" selection-end-column="48" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/mainPage/userManage.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-81">
-          <caret line="24" column="30" lean-forward="true" selection-start-line="24" selection-start-column="30" selection-end-line="24" selection-end-column="30" />
+        <state relative-caret-position="189">
+          <caret line="24" column="30" lean-forward="false" selection-start-line="24" selection-start-column="30" selection-end-line="24" selection-end-column="30" />
           <folding>
             <element signature="e#0#57#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cguoSite/urls.py">
+    <entry file="file://$PROJECT_DIR$/mainPage/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="5" column="20" lean-forward="false" selection-start-line="5" selection-start-column="20" selection-end-line="5" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/signUp.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="27">
+          <caret line="259" column="44" lean-forward="false" selection-start-line="259" selection-start-column="44" selection-end-line="259" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/34543b65/baf27898-b12f-4b76-a7d1-9d3af16247d9/main.messageBoard_privatemessage">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/base.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="15" column="18" lean-forward="true" selection-start-line="15" selection-start-column="18" selection-end-line="15" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/messageBoard/models.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="297">
-          <caret line="42" column="57" lean-forward="true" selection-start-line="42" selection-start-column="57" selection-end-line="42" selection-end-column="57" />
-          <folding>
-            <element signature="e#632#664#0" expanded="true" />
-          </folding>
+          <caret line="11" column="50" lean-forward="false" selection-start-line="11" selection-start-column="50" selection-end-line="11" selection-end-column="50" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1010,40 +1163,111 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/signUp.html">
+    <entry file="file://$PROJECT_DIR$/cguoSite/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1053">
-          <caret line="259" column="44" lean-forward="true" selection-start-line="259" selection-start-column="44" selection-end-line="259" selection-end-column="44" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/messageBoard.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="295" column="84" lean-forward="true" selection-start-line="295" selection-start-column="84" selection-end-line="295" selection-end-column="84" />
+        <state relative-caret-position="247">
+          <caret line="45" column="47" lean-forward="false" selection-start-line="45" selection-start-column="47" selection-end-line="45" selection-end-column="47" />
           <folding>
-            <element signature="e#5169#5233#0#HTML" expanded="true" />
-            <element signature="e#5296#5346#0#HTML" expanded="true" />
-            <element signature="e#5841#6783#0#HTML" expanded="false" />
-            <element signature="e#6127#6191#0#HTML" expanded="true" />
-            <element signature="e#6254#6304#0#HTML" expanded="true" />
-            <element signature="e#6973#7553#0#HTML" expanded="false" />
-            <element signature="e#7688#7937#0#HTML" expanded="false" />
-            <element signature="e#7992#9412#0#HTML" expanded="false" />
-            <element signature="e#11748#12231#0#HTML" expanded="false" />
-            <marker date="1550749370613" expanded="false" signature="6134:6166" ph="..." />
+            <element signature="e#632#664#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/messageBoard/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="34" column="49" lean-forward="false" selection-start-line="34" selection-start-column="49" selection-end-line="34" selection-end-column="49" />
+        <state relative-caret-position="-54">
+          <caret line="28" column="0" lean-forward="false" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
           <folding>
-            <element signature="e#0#35#0" expanded="true" />
+            <element signature="e#0#48#0" expanded="true" />
+            <element signature="e#355#397#0" expanded="false" />
+            <element signature="e#2448#3135#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/js/manageMessage.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-29">
+          <caret line="152" column="44" lean-forward="false" selection-start-line="152" selection-start-column="44" selection-end-line="152" selection-end-column="44" />
+          <folding>
+            <element signature="n#!!doc;n#display_note_dynamic#0" expanded="false" />
+            <element signature="n#!!block;n#display_note_dynamic#0" expanded="false" />
+            <element signature="n#!!block;n#postMessage#0" expanded="false" />
+            <element signature="n#!!block;n#change_page#0" expanded="false" />
+            <element signature="e#3703#3954#0" expanded="false" />
+            <element signature="e#4010#4191#0" expanded="false" />
+            <element signature="e#4032#4183#0" expanded="false" />
+            <element signature="e#4204#4714#0" expanded="false" />
+            <element signature="e#4226#4365#0" expanded="false" />
+            <element signature="e#4435#4571#0" expanded="false" />
+            <element signature="e#4622#4706#0" expanded="false" />
+            <element signature="e#4763#4835#0" expanded="false" />
+            <element signature="e#4872#4974#0" expanded="false" />
+            <element signature="e#5012#5114#0" expanded="false" />
+            <element signature="e#5250#5428#0" expanded="false" />
+            <element signature="e#5347#5420#0" expanded="false" />
+            <element signature="e#5459#5639#0" expanded="false" />
+            <element signature="e#5558#5631#0" expanded="false" />
+            <element signature="n#!!block;n#display_messages#0" expanded="false" />
+            <element signature="n#!!block;n#getMessage#0" expanded="false" />
+            <element signature="n#!!block;n#deleteMessage#0" expanded="false" />
+            <element signature="n#!!block;n#deleteMessage_confirm#0" expanded="false" />
+            <marker date="1550935177227" expanded="true" signature="5857:5874" ph="..." />
+            <marker date="1550935177227" expanded="true" signature="6349:6359" ph="..." />
+            <marker date="1550935177227" expanded="true" signature="6483:6510" ph="..." />
+            <marker date="1550935177227" expanded="true" signature="9573:9590" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/messageBoard.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="139">
+          <caret line="236" column="21" lean-forward="true" selection-start-line="236" selection-start-column="21" selection-end-line="236" selection-end-column="21" />
+          <folding>
+            <element signature="e#122#219#0#HTML" expanded="false" />
+            <element signature="e#245#441#0#HTML" expanded="false" />
+            <element signature="e#450#676#0#HTML" expanded="false" />
+            <element signature="e#697#795#0#HTML" expanded="false" />
+            <element signature="e#824#1189#0#HTML" expanded="false" />
+            <element signature="e#1234#1395#0#HTML" expanded="false" />
+            <element signature="e#1442#1554#0#HTML" expanded="false" />
+            <element signature="e#1607#1738#0#HTML" expanded="false" />
+            <element signature="e#1790#1922#0#HTML" expanded="false" />
+            <element signature="e#1937#2139#0#HTML" expanded="false" />
+            <element signature="e#2167#2453#0#HTML" expanded="false" />
+            <element signature="e#2486#2738#0#HTML" expanded="false" />
+            <element signature="e#2760#2866#0#HTML" expanded="false" />
+            <element signature="e#2896#3101#0#HTML" expanded="false" />
+            <element signature="e#3126#3264#0#HTML" expanded="false" />
+            <element signature="e#3289#3365#0#HTML" expanded="false" />
+            <element signature="e#3389#3661#0#HTML" expanded="false" />
+            <element signature="e#3684#3869#0#HTML" expanded="false" />
+            <element signature="e#3898#4138#0#HTML" expanded="false" />
+            <element signature="e#4166#4204#0#HTML" expanded="false" />
+            <element signature="e#4239#4278#0#HTML" expanded="false" />
+            <element signature="e#4311#4574#0#HTML" expanded="false" />
+            <element signature="e#4609#4669#0#HTML" expanded="false" />
+            <element signature="e#4708#4792#0#HTML" expanded="false" />
+            <element signature="e#4826#4944#0#HTML" expanded="false" />
+            <element signature="e#4988#5121#0#HTML" expanded="false" />
+            <element signature="e#5170#5320#0#HTML" expanded="false" />
+            <element signature="e#5364#5515#0#HTML" expanded="false" />
+            <element signature="e#5567#5680#0#HTML" expanded="false" />
+            <element signature="e#5722#6184#0#HTML" expanded="false" />
+            <element signature="e#6493#6537#0#HTML" expanded="true" />
+            <element signature="e#9707#10287#0#HTML" expanded="false" />
+            <element signature="e#9783#10275#0#HTML" expanded="false" />
+            <marker date="1550935252387" expanded="false" signature="8762:8794" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cguoSite/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="27" column="21" lean-forward="true" selection-start-line="27" selection-start-column="21" selection-end-line="27" selection-end-column="21" />
+          <folding />
         </state>
       </provider>
     </entry>
