@@ -80,6 +80,7 @@ div#log p{
     height: 30px;
     text-align: left;
     background: url('/static/images/search.jpg');
+    background-color: white;
     background-repeat: no-repeat;
     background-size: 25px;
     background-position:5px center;
@@ -124,10 +125,10 @@ div#log p{
     text-decoration: none;
 }
 #navigation_bar a:hover{
-    background: #7d007d;
+    background: #2942c4;
     color:#fff;
 }
 #navigation_bar li.active a{
-    background: #7d007d;
+    background: #2942c4;
     color:#fff;
 }
