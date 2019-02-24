@@ -36,7 +36,7 @@ function drawPic(){
         var txt = _str[randomNum(0,_str.length)];
         _picTxt += txt;//获取一个随机数
         ctx.fillStyle = randomColor(10,100);//填充随机颜色
-        ctx.font = randomNum(60,100)+"px SimHei";//设置随机数大小，字体为SimHei
+        ctx.font = randomNum(60,100)/16+"rem SimHei";//设置随机数大小，字体为SimHei
         ctx.translate(x,y);//将当前xy坐标作为原始坐标
         ctx.rotate(deg*Math.PI/180);//旋转随机角度
         ctx.fillText(txt, 0,0);//绘制填色的文本

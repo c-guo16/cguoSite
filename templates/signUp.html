@@ -5,74 +5,74 @@
 
     <style type="text/css">
         p#title_logUp{
-            font-size: 30px;
+            font-size: 1.875rem;
             text-align: center;
-            letter-spacing: 8px;
+            letter-spacing: 0.5rem;
         }
         div#login{
-            width:600px;
-            height:500px;
-            margin:0 auto 50px;
-            padding-top: 50px;
-            border-radius: 10px;
-            box-shadow: 3px 3px 5px #333333 ;
+            width:37.5rem;
+            height:31.25rem;
+            margin:0 auto 3.125rem;
+            padding-top: 3.125rem;
+            border-radius: 0.625rem;
+            box-shadow: 0.1875rem 0.1875rem 0.3125rem #333333 ;
             background-color: #ececec;
         }
         div.form-group{
-            padding-top: 30px;
-            width:600px;
-            height: 40px;
+            padding-top: 1.875rem;
+            width:37.5rem;
+            height: 2.5rem;
         }
         .form-group label{
             display: block;
-            font-size: 20px;
-            width: 100px;
+            font-size: 1.25rem;
+            width: 6.25rem;
             float:left;
-            margin-left: 90px;
+            margin-left: 5.625rem;
         }
         .form-group input{
-            height: 25px;
-            width:200px;
-            font-size: 16px;
-            margin-left: 10px;
+            height: 1.5625rem;
+            width:12.5rem;
+            font-size: 1rem;
+            margin-left: 0.625rem;
             float:left;
         }
         .form-group div{
             float:left;
-            height: 25px;
-            padding-top: 4px;
-            padding-left: 20px;
+            height: 1.5625rem;
+            padding-top: 0.25rem;
+            padding-left: 1.25rem;
         }
         .form-group div p{
             margin:0;
             color: red;
         }
         canvas#verification_code_canvas{
-            width: 140px;
-            height: 33px;
+            width: 8.75rem;
+            height: 2.0625rem;
             float: left;
-            margin-left: 20px;
+            margin-left: 1.25rem;
         }
         label#confirm_agreement{
-            margin-left:85px;
-            margin-top:10px;
+            margin-left:5.3125rem;
+            margin-top:0.625rem;
             display: block;
         }
         p#message{
-            height: 50px;
-            padding-top: 10px;
+            height: 3.125rem;
+            padding-top: 0.625rem;
             text-align: center;
             margin: 0;
             color: red;
         }
         input#button{
-            width: 100px;
-            height: 30px;
-            margin-left: 250px;
+            width: 6.25rem;
+            height: 1.875rem;
+            margin-left: 15.625rem;
             margin-top:0;
-            font-size: 15px;
-            letter-spacing: 15px;
-            padding-left: 22px;
+            font-size: 0.9375rem;
+            letter-spacing: 0.9375rem;
+            padding-left: 1.375rem;
         }
     </style>
 {% endblock %}
@@ -82,14 +82,14 @@
     <div id="login">
         <form id='signUpForm' action="/postSignUp" method="post" onsubmit="return validate()"> {% csrf_token %}
             <div class="form-group">
-                <label style="letter-spacing: 7px">用户名：</label>
+                <label style="letter-spacing: 0.4375rem">用户名：</label>
                 <input type="text" name="username" id="username" placeholder="请输入用户名" onchange="username_duplicate_check()"/>
                 <div>
                     <p id="form_username">{{ username_note }}</p>
                 </div>
             </div>
             <div class="form-group">
-                <label style="letter-spacing: 20px">密码：</label>
+                <label style="letter-spacing: 1.25rem">密码：</label>
                 <input type="password" name="password" id="password" placeholder="请输入密码" onchange="check_form()"/>
                 <div>
                     <p id="form_password"></p>
@@ -103,15 +103,15 @@
                 </div>
             </div>
             <div class="form-group">
-                <label style="letter-spacing: 20px">邮箱：</label>
+                <label style="letter-spacing: 1.25rem">邮箱：</label>
                 <input type="text" name="email" id="email" placeholder="请输入邮箱地址" onchange="email_duplicate_check()"/>
                 <div>
                     <p id="form_email">{{ email_note }}</p>
                 </div>
             </div>
             <div class="form-group">
-                <label style="letter-spacing: 7px">验证码：</label>
-                <input type="text" style="width:80px" id="verification_code"/>
+                <label style="letter-spacing: 0.4375rem">验证码：</label>
+                <input type="text" style="width:5rem" id="verification_code"/>
                 <canvas id="verification_code_canvas"></canvas>
             </div>
             <label id="confirm_agreement"><input type="checkbox" value="" id="cb" onclick="check_form()">我已阅读并同意<a href="/userAgreement" target="_blank">《cguo16网站用户协议》</a></label>

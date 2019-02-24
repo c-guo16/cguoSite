@@ -82,20 +82,20 @@ function change_page(result,page,type) {
     page_str+='<button type="button" class="page_button toright" onclick="getMessage(\''+type+'\','+(current_page+1)+')">></button>';
     $('div#'+type+' .changePage_area').html(page_str);
     $('div#'+type+' .page_button').css({
-        "width":"30px",
-        "height":"30px",
-        "margin-left":"3px",
-        "margin-right":"3px",
+        "width":"1.875rem",
+        "height":"1.875rem",
+        "margin-left":"0.1875rem",
+        "margin-right":"0.1875rem",
         "background":"#f8f8f8",
         "border":"0",
-        "font-size":"15px",
+        "font-size":"0.9375rem",
         "cursor":"pointer",
         "color":"#797979"
     });
     $('div#'+type+' .page_button').hover(function () {
         $(this).css({
             "background":"#f0f0f0",
-            "border":"1px solid #6b6b6b",
+            "border":"0.0625rem solid #6b6b6b",
             "color":"black",
             "font-weight":"bold"
         });
@@ -108,7 +108,7 @@ function change_page(result,page,type) {
         });
         if($(this).hasClass('toleft')||$(this).hasClass('toright')){
             $(this).css({
-                "border":"1px solid #d3d3d3",
+                "border":"0.0625rem solid #d3d3d3",
                 "font-weight":"bold"
             });
         }
@@ -122,14 +122,14 @@ function change_page(result,page,type) {
         "text-decoration":"underline"
     });
     $('div#'+type+' .toleft').css({
-        "border":"1px solid #d3d3d3",
+        "border":"0.0625rem solid #d3d3d3",
         "font-weight":"bold",
-        "font-size":"18px"
+        "font-size":"1.125rem"
     });
     $('div#'+type+' .toright').css({
-        "border":"1px solid #d3d3d3",
+        "border":"0.0625rem solid #d3d3d3",
         "font-weight":"bold",
-        "font-size":"18px"
+        "font-size":"1.125rem"
     });
     $('div#'+type+' .toleft').attr("disabled",false);
     $('div#'+type+' .toright').attr("disabled",false);
@@ -159,16 +159,16 @@ function display_messages(result,page,type) {
         $('div#private .display_area').html(str);
         $('div#private .display_area .input_hr').css({
             "align-items":"center",
-            "width":"740px",
+            "width":"46.25rem",
             "color": "#d3d3d3",
-            "margin": "0 auto 8px auto"
+            "margin": "0 auto 0.5rem auto"
         });
     }
     for(var i=messages.length-1;i>-1;i--) { //拼接展示评论的html
         str += '<hr class="input_hr">';
         str += '<div class="single_message">';
         str += '<p class="message_word"><span style="color:blue">' + messages[i]["fields"]["username"] + "</span>：" + messages[i]["fields"]["content"] + '</p>';
-        str += '<p style="color:#646464;font-size:8px">' + result.time_list[i];
+        str += '<p style="color:#646464;font-size:0.5rem">' + result.time_list[i];
         //自己的评论可以删除：
         if(messages[i]["fields"]["username"]!=='游客'&&messages[i]["fields"]["username"]===vars.user_name){
             str += '<span id=\''+messages[i]["pk"]+'\' class="delete" onclick="deleteMessage('+messages[i]["pk"]+',\''+type+'\')">删除</span>'
@@ -183,13 +183,13 @@ function display_messages(result,page,type) {
     change_page(result,page,type);
     $('div#'+type+' .display_area .input_hr').css({
         "align-items":"center",
-        "width":"740px",
+        "width":"46.25rem",
         "color": "#d3d3d3",
-        "margin": "0 auto 8px auto"
+        "margin": "0 auto 0.5rem auto"
     });
     $('div#'+type+' .display_area .single_message').css({
         "width":"80%",
-        "margin": "0 auto 8px auto"
+        "margin": "0 auto 0.5rem auto"
     });
     $('div#'+type+' .display_area .message_word').css({
         "word-break":"normal",
@@ -271,9 +271,9 @@ function deleteMessage_confirm(pk,type) {
                 $('div#private .display_area').html(str);
                 $('div#private .display_area .input_hr').css({
                     "align-items":"center",
-                    "width":"740px",
+                    "width":"46.25rem",
                     "color": "#d3d3d3",
-                    "margin": "0 auto 8px auto"
+                    "margin": "0 auto 0.5rem auto"
                 });
             }
             $('.note_dynamic span').text("✔ 删除成功");
