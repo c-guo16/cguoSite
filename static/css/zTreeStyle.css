@@ -1,0 +1,106 @@
+/*-------------------------------------
+zTree Style
+
+version:	3.5.19
+author:		Hunter.z
+email:		hunter.z@263.net
+website:	http://code.google.com/p/jquerytree/
+
+-------------------------------------*/
+
+.ztree * {padding:0; margin:0; font-size:1.3846153846153846rem; font-family: Verdana, Arial, Helvetica, AppleGothic, sans-serif}
+.ztree {margin:0; padding:0.5769230769230769rem; color:#333}
+.ztree li{padding:0; margin:0; list-style:none; line-height:1.6153846153846154rem; text-align:left; white-space:nowrap; outline:0}
+.ztree li ul{ margin:0; padding:0 0 0 2.076923076923077rem}
+.ztree li ul.line{ background:url(./img/line_conn.gif) 0 0 repeat-y;}
+
+.ztree li a {padding:0.11538461538461539rem 0.34615384615384615rem 0 0; margin:0; cursor:pointer; height:1.9615384615384615rem; color:#333; background-color: transparent;
+	text-decoration:none; vertical-align:top; display: inline-block}
+.ztree li a:hover {text-decoration:underline}
+.ztree li a.curSelectedNode {padding-top:0.0rem; background-color:#FFE6B0; color:black; height:1.8461538461538463rem; border:0.11538461538461539rem #FFB951 solid; opacity:0.8;}
+.ztree li a.curSelectedNode_Edit {padding-top:0.0rem; background-color:#FFE6B0; color:black; height:1.8461538461538463rem; border:0.11538461538461539rem #FFB951 solid; opacity:0.8;}
+.ztree li a.tmpTargetNode_inner {padding-top:0.0rem; background-color:#316AC5; color:white; height:1.8461538461538463rem; border:0.11538461538461539rem #316AC5 solid;
+	opacity:0.8; filter:alpha(opacity=80)}
+.ztree li a.tmpTargetNode_prev {}
+.ztree li a.tmpTargetNode_next {}
+.ztree li a input.rename {height:1.6153846153846154rem; width:9.23076923076923rem; padding:0; margin:0;
+	font-size:1.3846153846153846rem; border:0.11538461538461539rem #7EC4CC solid; *border:0.0rem}
+.ztree li span {line-height:1.8461538461538463rem; margin-right:0.23076923076923078rem}
+.ztree li span.button {line-height:0; margin:0; width:1.8461538461538463rem; height:1.8461538461538463rem; display: inline-block; vertical-align:middle;
+	border:0 none; cursor: pointer;outline:none;
+	background-color:transparent; background-repeat:no-repeat; background-attachment: scroll;
+	background-image:url("./img/zTreeStandard.png")}
+
+.ztree li span.button.chk {width:1.5rem; height:1.5rem; margin:0 0.34615384615384615rem 0 0; cursor: auto}
+.ztree li span.button.chk.checkbox_false_full {background-position:0 0}
+.ztree li span.button.chk.checkbox_false_full_focus {background-position:0 -1.6153846153846154rem}
+.ztree li span.button.chk.checkbox_false_part {background-position:0 -3.230769230769231rem}
+.ztree li span.button.chk.checkbox_false_part_focus {background-position:0 -4.846153846153846rem}
+.ztree li span.button.chk.checkbox_false_disable {background-position:0 -6.461538461538462rem}
+.ztree li span.button.chk.checkbox_true_full {background-position:-1.6153846153846154rem 0}
+.ztree li span.button.chk.checkbox_true_full_focus {background-position:-1.6153846153846154rem -1.6153846153846154rem}
+.ztree li span.button.chk.checkbox_true_part {background-position:-1.6153846153846154rem -3.230769230769231rem}
+.ztree li span.button.chk.checkbox_true_part_focus {background-position:-1.6153846153846154rem -4.846153846153846rem}
+.ztree li span.button.chk.checkbox_true_disable {background-position:-1.6153846153846154rem -6.461538461538462rem}
+.ztree li span.button.chk.radio_false_full {background-position:-3.230769230769231rem 0}
+.ztree li span.button.chk.radio_false_full_focus {background-position:-3.230769230769231rem -1.6153846153846154rem}
+.ztree li span.button.chk.radio_false_part {background-position:-3.230769230769231rem -3.230769230769231rem}
+.ztree li span.button.chk.radio_false_part_focus {background-position:-3.230769230769231rem -4.846153846153846rem}
+.ztree li span.button.chk.radio_false_disable {background-position:-3.230769230769231rem -6.461538461538462rem}
+.ztree li span.button.chk.radio_true_full {background-position:-4.846153846153846rem 0}
+.ztree li span.button.chk.radio_true_full_focus {background-position:-4.846153846153846rem -1.6153846153846154rem}
+.ztree li span.button.chk.radio_true_part {background-position:-4.846153846153846rem -3.230769230769231rem}
+.ztree li span.button.chk.radio_true_part_focus {background-position:-4.846153846153846rem -4.846153846153846rem}
+.ztree li span.button.chk.radio_true_disable {background-position:-4.846153846153846rem -6.461538461538462rem}
+
+.ztree li span.button.switch {width:2.076923076923077rem; height:2.076923076923077rem}
+.ztree li span.button.root_open{background-position:-10.615384615384615rem -6.230769230769231rem}
+.ztree li span.button.root_close{background-position:-8.538461538461538rem -6.230769230769231rem}
+.ztree li span.button.roots_open{background-position:-10.615384615384615rem 0}
+.ztree li span.button.roots_close{background-position:-8.538461538461538rem 0}
+.ztree li span.button.center_open{background-position:-10.615384615384615rem -2.076923076923077rem}
+.ztree li span.button.center_close{background-position:-8.538461538461538rem -2.076923076923077rem}
+.ztree li span.button.bottom_open{background-position:-10.615384615384615rem -4.153846153846154rem}
+.ztree li span.button.bottom_close{background-position:-8.538461538461538rem -4.153846153846154rem}
+.ztree li span.button.noline_open{background-position:-10.615384615384615rem -8.307692307692308rem}
+.ztree li span.button.noline_close{background-position:-8.538461538461538rem -8.307692307692308rem}
+.ztree li span.button.root_docu{ background:none;}
+.ztree li span.button.roots_docu{background-position:-6.461538461538462rem 0}
+.ztree li span.button.center_docu{background-position:-6.461538461538462rem -2.076923076923077rem}
+.ztree li span.button.bottom_docu{background-position:-6.461538461538462rem -4.153846153846154rem}
+.ztree li span.button.noline_docu{ background:none;}
+
+.ztree li span.button.ico_open{margin-right:0.23076923076923078rem; background-position:-12.692307692307692rem -1.8461538461538463rem; vertical-align:top; *vertical-align:middle}
+.ztree li span.button.ico_close{margin-right:0.23076923076923078rem; background-position:-12.692307692307692rem 0; vertical-align:top; *vertical-align:middle}
+.ztree li span.button.ico_docu{margin-right:0.23076923076923078rem; background-position:-12.692307692307692rem -3.6923076923076925rem; vertical-align:top; *vertical-align:middle}
+.ztree li span.button.edit {margin-right:0.23076923076923078rem; background-position:-12.692307692307692rem -5.538461538461538rem; vertical-align:top; *vertical-align:middle}
+.ztree li span.button.remove {margin-right:0.23076923076923078rem; background-position:-12.692307692307692rem -7.384615384615385rem; vertical-align:top; *vertical-align:middle}
+
+.ztree li span.button.ico_loading{margin-right:0.23076923076923078rem; background:url(./img/loading.gif) no-repeat scroll 0 0 transparent; vertical-align:top; *vertical-align:middle}
+.ztree li span.button.music_ico_docu{background-image: url('./img/music.jpg');background-size: 100% 100%;background-repeat: no-repeat}
+.ztree li span.button.txt_ico_docu{background-image: url('./img/txt.jpg');background-size: 100% 100%;background-repeat: no-repeat}
+.ztree li span.button.rar_ico_docu{background-image: url('./img/rar.jpg');background-size: 100% 100%;background-repeat: no-repeat}
+.ztree li span.button.video_ico_docu{background-image: url('./img/video.jpg');background-size: 100% 100%;background-repeat: no-repeat}
+.ztree li span.button.pdf_ico_docu{background-image: url('./img/pdf.jpg');background-size: 100% 100%;background-repeat: no-repeat}
+.ztree li span.button.word_ico_docu{background-image: url('./img/word.jpg');background-size: 100% 100%;background-repeat: no-repeat}
+.ztree li span.button.excel_ico_docu{background-image: url('./img/excel.jpg');background-size: 100% 100%;background-repeat: no-repeat}
+.ztree li span.button.exe_ico_docu{background-image: url('./img/exe.jpg');background-size: 100% 100%;background-repeat: no-repeat}
+.ztree li span.button.ppt_ico_docu{background-image: url('./img/ppt.jpg');background-size: 100% 100%;background-repeat: no-repeat}
+
+ul.tmpTargetzTree {background-color:#FFE6B0; opacity:0.8; filter:alpha(opacity=80)}
+
+span.tmpzTreeMove_arrow {width:1.8461538461538463rem; height:1.8461538461538463rem; display: inline-block; padding:0; margin:0.23076923076923078rem 0 0 0.11538461538461539rem; border:0 none; position:absolute;
+	background-color:transparent; background-repeat:no-repeat; background-attachment: scroll;
+	background-position:-12.692307692307692rem -9.23076923076923rem; background-image:url("./img/zTreeStandard.png"); *background-image:url("./img/zTreeStandard.gif")}
+
+ul.ztree.zTreeDragUL {margin:0; padding:0; position:absolute; width:auto; height:auto;overflow:hidden; background-color:#cfcfcf; border:0.11538461538461539rem #00B83F dotted; opacity:0.8; filter:alpha(opacity=80)}
+.zTreeMask {z-index:10000; background-color:#cfcfcf; opacity:0.0; filter:alpha(opacity=0); position:absolute}
+
+/* level style*/
+/*.ztree li span.button.level0 {
+	display:none;
+}
+.ztree li ul.level0 {
+	padding:0;
+	background:none;
+}*/

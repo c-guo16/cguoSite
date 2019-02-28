@@ -4,33 +4,36 @@
     <title>Cguo16's Home</title>
     <style>
         #v_ip{
-            font-family: "Courier New", Courier, "Courier 10 Pitch", monospace;
             font-size:1.25rem;
             font-weight:lighter;
             color:#2942c4;
             text-align:right;
-}
-        #title{
-            font-family: "Courier New", Courier, "Courier 10 Pitch", monospace;
+        }
+        .para{
+            font-size:1.4rem;
+            color: #2942c4;
+            text-align: center;
+        }
+        .para span{
+            color: red;
+        }
+        .para a{
+            color: red;
+            text-decoration: none;
+        }
+        .title{
             font-size:2.375rem;
-            font-weight:lighter;
+            font-weight:bold;
             color:#2942c4;
             text-align: center;
-}
-        #v_times{
-            font-family: "Courier New", Courier, "Courier 10 Pitch", monospace;
-            font-size:2.375rem;
-            font-weight:lighter;
-            color:#2942c4;
-            text-align: center;
-}
+        }
     </style>
 {% endblock %}
 
 {% block content %}
-    <p id = "v_ip">来访者ip：{{ v_ip }}</p>
-    <p id = "title">☆ cguo16的首页 ☆</p>
-    <p id = "v_times">访问次数：{{ v_times }}</p>
-
-
+    <p class="para" id = "v_ip">来访者ip：{{ v_ip }}</p>
+    <p class="para title">(๑¯ ∀¯๑)</p>
+    <p class="para title">Welcome to Cguo16's Website！</p>
+    <p class="para">这里是一只大学狗自己搭建的网站的主页，如需更多信息请移步<a href="/about">“小站的故事”</a>页面。Have a nice day!</p>
+    <p class="para">如有网站搭建或平面设计方面的建议，还请不吝赐教，可直接 <a href="/messageBoard">在留言页留言</a> 或 发送邮件 <span>743535469@qq.com</span></p>
 {% endblock %}

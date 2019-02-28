@@ -16,9 +16,7 @@
     {% endblock %}
     <div id="main_area">
         <div id="header">
-            <h1 id="banner">
-                <a href="/"></a>
-            </h1>
+            <a href="/" id="banner_a"><img id="banner" src="/static/images/cguo16.png"></a>
             <div id="right_header">
                 <div id="log">
                     {% if request.session.is_login %}
@@ -43,14 +41,14 @@
                 <li {%if request.path == '/'%}class="active"{% endif %}><a href="/">首页</a></li>
                 <li {%if request.path|slice:'13' == '/fileTransfer'%}class="active"{% endif %}><a href="/fileTransfer">文件服务</a></li>
                 <li {%if request.path|slice:'13' == '/messageBoard'%}class="active"{% endif %}><a href="/messageBoard">留言板</a></li>
-                <li {%if request.path|slice:'2' == '/fileTransfer'%}class="active"{% endif %}><a href="/fileTransfer">待定2</a></li>
+                <li {%if request.path|slice:'6' == '/about'%}class="active"{% endif %}><a href="/about">小站的故事</a></li>
             </ul>
         </div>
 
         {% block content %}
             <div>这里是默认内容，所有继承自这个模板的，如果不覆盖就显示这里的默认内容。</div>
         {% endblock %}
-        <p align="right" style="color:#2942c4;">latest commit: 2019.2.24</p>
+        <p align="right" style="color:#2942c4;" id="commit">latest commit: 2019.2.24</p>
     </div>
     {% block scripts %}
     {% endblock %}

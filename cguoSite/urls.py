@@ -17,6 +17,7 @@ from django.contrib import admin
 from django.urls import path
 from mainPage import views as mpviews
 from messageBoard import views as mbviews
+from fileService import views as fileviews
 from django.contrib.staticfiles.urls import staticfiles_urlpatterns
 
 urlpatterns = [
@@ -25,6 +26,7 @@ urlpatterns = [
     path('',mpviews.render_index),
     path('fileTransfer',mpviews.render_file_transfer),
     path('messageBoard',mbviews.render_message_board),
+    path('about',mpviews.render_about),
 
     #用户管理功能：
     path('signUp',mpviews.render_sign_up),
@@ -43,7 +45,12 @@ urlpatterns = [
     path('getPrivateMessage',mbviews.sendMessage,{"type":"private"}),
     path('postPublicMessage',mbviews.getMessage,{"type":"public"}),
     path('postPrivateMessage',mbviews.getMessage,{"type":"private"}),
-    path('postDeleteMessage',mbviews.delMessage)
+    path('postDeleteMessage',mbviews.delMessage),
+
+    #文件功能：
+    path('postActivateCheck',fileviews.activateCheck),
+    path('getFileList',fileviews.sendFileList),
+    path('downloadFiles',fileviews.sendFiles)
 ]
 
 urlpatterns += staticfiles_urlpatterns()

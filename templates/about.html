@@ -1,0 +1,286 @@
+{% extends "base.html" %}
+
+{% block head %}
+    <title>About us</title>
+    <style>
+        .mask{
+            position: absolute;
+            display: none;
+            background-color: black;
+            background-repeat: no-repeat;
+            background-image: url("/static/images/翅膀.png");
+            background-position: center;
+            background-size: 80% 60%;
+            opacity: 0;
+            z-index: 10000;
+        }
+        .hidden_note{
+            width: 90%;
+            height: 40%;
+            position: absolute;
+            top:0;left: 0;bottom: 0;right: 0;
+            margin: auto;
+            z-index: 10001;
+            display: none;
+        }
+        .hidden_note img{
+            height: 100%;
+            width: 100%;
+            opacity: 0;
+        }
+        .tabs {
+            position: relative;
+            background: #4285f4;
+            width: 60rem;
+            height: 40rem;
+            margin: 6.25rem auto 0.625rem;
+            padding: 1.5rem;
+            overflow: hidden;
+            border-radius: 0.625rem;
+        }
+        .leftside{
+            float: left;
+            height: 100%;
+            width: 21%;
+            text-align: center;
+            z-index: 111;
+        }
+        .leftside .photo{
+            border-radius: 0.625rem;
+            height: 13rem;
+            width: 100%;
+            border-color: #2942c4;
+            background-size: 100% 100%;
+            background-image: url("/static/images/photo.jpg");
+            background-repeat: no-repeat;
+            box-shadow: inset 0 0 5px black;
+        }
+        .leftside .info{
+            margin-top: 1.5rem;
+            height: calc(100% - 1.5rem - 13rem);
+            width: 100%;
+            background: #f8f8f8;
+            border-radius: 0.625rem;
+            overflow: hidden;
+            box-shadow: inset 0 0 5px black;
+            color: #454545;
+        }
+        .leftside .info .info_title{
+            margin-left: 1rem;
+            margin-top: 2rem;
+            text-align: left;
+            font-size: 1.4rem;
+            font-weight: bold;
+        }
+        .leftside .info .info_content{
+            margin-top: 1.5rem;
+            margin-left: 1rem;
+            text-align: left;
+            font-size: 1rem;
+        }
+        .leftside .info .info_item{
+            margin-top: 0.4rem;
+            margin-left: 2.2rem;
+            text-align: left;
+            font-size: 1rem;
+            color: #2942c4;
+        }
+        .rightside{
+            float: left;
+            margin-left: 1.5rem;
+            height: 100%;
+            width: calc(100% - 1.5rem - 21%);
+            z-index: 111;
+        }
+        .rightside .text_area{
+            height: 100%;
+            background: #f8f8f8;
+            color: #454545;
+            border-radius: 0.625rem;
+            overflow: hidden;
+            box-shadow: inset 0 0 5px black;
+        }
+        .rightside .text_container{
+            height: 88%;
+            margin: 6% auto auto 6%;
+            width: 88%;
+        }
+        .text_area p.text_content{
+            font-size:1.2rem ;
+            line-height: 1.8rem;
+            margin-top: 0;
+            word-break:normal;
+            white-space:pre-line;
+            word-wrap:break-word;
+            text-indent: 2em;
+        }
+    </style>
+{% endblock %}
+
+{% block mask %}
+    <div class="mask"></div>
+{% endblock %}
+
+{% block content %}
+    <div class="tabs">
+        <div class="hidden_note"><img src="/static/images/dracula.png"></div>
+        <div class="leftside">
+            <div class="photo"></div>
+            <div class="info">
+                <div class="info_title" style="color: black">网站作者：</div>
+                <div class="info_content" style="margin-top:1.5rem">现状：</div>
+                <div class="info_item">本科在读</div>
+                <div class="info_content">所在地：</div>
+                <div class="info_item">暂居北京</div>
+                <div class="info_content">邮箱：</div>
+                <div class="info_item">743535469@qq.com</div>
+                <div class="info_content">网易云音乐ID：</div>
+                <div class="info_item">魔理沙的弹幕回忆</div>
+            </div>
+        </div>
+        <div class="rightside">
+            <div class="text_area">
+                <div class="text_container">
+                    <p class="text_content">欢迎大家访问我的网站！(≧ω≦)/ 不管您是从什么渠道得知这里的，相聚就是缘分。</p>
+                    <p class="text_content">这个网站是我的心血来潮之作。我是web编程初学者，2019年寒假开工，在家想着“咿呀，要能有个自己的网站多好哇”然后就开始干活了，鸽系更新，佛系维护。基本完成的部分有：</p>
+                    <p class="text_content">• 用户管理，可以实现简单的注册、邮件验证和登录功能。</p>
+                    <p class="text_content">• 文件服务，上面放了一些小东西，目前只支持下载，会逐步更新。</p>
+                    <p class="text_content">• 留言板，大家有什么怨气尽管撒就好了23333333。</p>
+                    <p class="text_content">如您所见，网站还停留在框架阶段，相当地简陋，大家都来当我的测试工程师吧！帮我找找bug，提提建议，小弟不胜感激。</p>
+                    <p class="text_content">说说我自己吧。我目前在北京读大学，一条咸鱼<span ><img src="/static/images/fish.png" style="height: 1.7rem;width: 2.1rem;vertical-align: middle"></span>，2.5次元宅男，<span title="世界属于三体！">科幻爱好者</span>，<a href="https://baike.baidu.com/item/东方Project" style="text-decoration: none;color: inherit" target="_blank">东方<span><img src="/static/images/东方.png" style="height: 1.8rem;width: 2rem;vertical-align: middle"></span></a>厨，自认有音乐细胞，<span title="大乱斗王者( • ̀ω•́ )✧">联盟<span><img src="/static/images/lol.png" style="height: 1.6rem;width: 1.5rem;vertical-align: middle"></span>菜鸟</span>，性格较严谨认真，<span onclick="show_mask()">但是总有一些出其不意的坏点子（神秘）</span>。目前努力学习英语和健身中。</p>
+                    <p class="text_content">以上です。</p>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block scripts %}
+    <script src="/static/js/jquery.transit.js"></script>
+    <script>
+        $(document).ready(function () {
+            str=$('#banner_a').html();
+            str=str+'<img id="banner_2" src="/static/images/dracula.png">';
+            $('#banner_a').html(str);
+            $('#banner_2').css({
+                "position":"absolute",
+                "height": "100%",
+                "opacity":"0"
+            });
+            $('.mask').css({
+                "height": $(document).height(),
+                "width": $(document).width()
+            })
+        });
+        var dracula=false;
+        //彩蛋：改变界面风格
+        function changeStyle() {
+            if(dracula){
+                $('body').stop();
+                $('body').transition({ background:"#B1F5F0"},2000);
+                $('#log').stop();
+                $('#log').transition({ background:"#4285f4"},2000);
+                $('#search').stop();
+                $('#search').transition({ background:"#4285f4"},2000);
+                $('#navigation_bar').stop();
+                $('#navigation_bar').transition({ backgroundColor:"#f8f8f8"},2000);
+                $('#navigation_bar li.active a').stop();
+                $('#navigation_bar li.active a').transition({ background:"#2942c4"},2000);
+                $('#navigation_bar a').not('#navigation_bar li.active a').css({background:"none"});
+                $('#navigation_bar a').not('#navigation_bar li.active a').hover(function () {
+                    $(this).css({ background:"#2942c4"});
+                },function () {
+                    $(this).css({ background:"#f8f8f8"});
+                });
+                $('.tabs').stop();
+                $('.tabs').transition({ background:"#4285f4"},2000);
+                $('.photo').stop();
+                $('.photo').transition({ backgroundColor:"#f8f8f8"},2000);
+                $('.info').stop();
+                $('.info').transition({ background:"#f8f8f8"},2000);
+                $('.text_area').stop();
+                $('.text_area').transition({ background:"#f8f8f8"},2000);
+                $('.info_title').stop();
+                $('.info_title').transition({ color:"#000000"},2000);
+                $('.info_item').stop();
+                $('.info_item').transition({ color:"#2942c4"},2000);
+                $('#commit').stop();
+                $('#commit').transition({ color:"#2942c4"},2000);
+                $('#banner').stop();
+                $('#banner').transition({ opacity:"100"},2000);
+                $('#banner_2').stop();
+                $('#banner_2').transition({ opacity:"0"},2000);
+                $('.hidden_note').transition({ opacity:"100"},2000);
+            }
+            else{
+                $('body').stop();
+                $('body').transition({ background:"#000000"},2000);
+                $('#log').stop();
+                $('#log').transition({ background:"#940405"},2000);
+                $('#search').stop();
+                $('#search').transition({ background:"#940405"},2000);
+                $('#navigation_bar').stop();
+                $('#navigation_bar').transition({ backgroundColor:"#6a0106"},2000);
+                $('#navigation_bar li.active a').stop();
+                $('#navigation_bar li.active a').transition({ background:"#bf0405"},2000);
+                $('#navigation_bar a').not('#navigation_bar li.active a').css({background:"none"});
+                $('#navigation_bar a').not('#navigation_bar li.active a').hover(function () {
+                    $(this).css({ background:"#bf0405"});
+                },function () {
+                    $(this).css({ background:"#6a0106"});
+                });
+                $('.tabs').stop();
+                $('.tabs').transition({ background:"#940405"},2000);
+                $('.photo').stop();
+                $('.photo').transition({ backgroundColor:"#000000"},2000);
+                $('.info').stop();
+                $('.info').transition({ background:"#000000"},2000);
+                $('.text_area').stop();
+                $('.text_area').transition({ background:"#000000"},2000);
+                $('.info_title').stop();
+                $('.info_title').transition({ color:"#454545"},2000);
+                $('.info_item').stop();
+                $('.info_item').transition({ color:"#bf0405"},2000);
+                $('#commit').stop();
+                $('#commit').transition({ color:"#bf0405"},2000);
+                $('#banner').stop();
+                $('#banner').transition({ opacity:"0"},2000);
+                $('#banner_2').stop();
+                $('#banner_2').transition({ opacity:"100"},2000);
+            }
+            dracula=!dracula;
+        }
+        function show_mask() {
+            if(!dracula) {
+                var $tmp=$('.hidden_note img');
+                $('.mask').css({
+                    "display": "block",
+                    "opacity":"0"
+                });
+                $('.hidden_note').css("display","block");
+                $tmp.css({"opacity":"0"});
+                $('.mask').transition({opacity:"0.4"},1000);
+                $tmp.stop();
+                $tmp.transition({opacity: "0.5"}, 1500, callback = function () {
+                    $tmp.stop();
+                    $tmp.transition({opacity: "0"}, 500, callback = function () {
+                        $tmp.stop();
+                        $tmp.transition({opacity: "1"}, 100,callback=function () {
+                            $tmp.stop();
+                            $tmp.transition({opacity: "0"}, 100,callback=function () {
+                                $('.mask').transition({opacity:"0"},100);
+                                $('.mask').css({"display": "none","opacity":"0"});
+                                $tmp.css({"opacity":"0"});
+                                $('.hidden_note').css("display","none");
+                                changeStyle();
+                            });
+                        });
+                    });
+                });
+            }
+            else{
+                changeStyle();
+            }
+        }
+    </script>
+{% endblock %}

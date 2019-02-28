@@ -2,18 +2,199 @@
 
 {% block head %}
     <title>File Transfer Service</title>
-<style type="text/css">
-    #canvas{
-        cursor:pointer;
-    }
-</style>
+    <style type="text/css">
+        .tabs {
+            position: relative;
+            background: #4285f4;
+            width: 50rem;
+            margin: 6.25rem auto 0.625rem;
+            overflow: hidden;
+            border-radius: 0.625rem;
+        }
+        .tabs-content {
+            margin: 1.25rem 0.625rem 1.25rem 0.625rem;
+            position: relative;
+            transition: 0.3s ease;
+            overflow: hidden;
+            border-radius: 0.625rem;
+            background-color: #f8f8f8;
+        }
+        .tabs-content:after {
+            content: '';
+            position: absolute;
+            bottom: -0.0625rem;
+            left: 0;
+            display: block;
+            width: 100%;
+            height: 0.0625rem;
+            box-shadow: 0 0 1.25rem 0.625rem #FFFFFF;
+        }
+        .tabs-content .input_hr{
+            align-items:center;
+            width:46.25rem;
+            color: #d3d3d3;
+            margin: 0 auto 0.5rem auto;
+        }
+        .tabs-content .note_area{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 3.75rem;
+            width: fit-content;
+            margin: 0.9375rem auto;
+            border-radius: 1.875rem;
+            background-color: #4285f4;
+            z-index: 111;
+        }
+        .note_area p{
+            margin: 0 2rem 0 2.2rem;
+            color: white;
+        }
+        .tree_area{
+            overflow: auto;
+            background-color: white;
+            margin-left: 6rem;
+            margin-bottom: 4rem;
+            float: left;
+            height: 30rem;
+            width: 30rem;
+            box-shadow: inset 0 0 5px black;
+        }
+        .operation_area{
+            height: 30rem;
+            width: 12.75rem;
+            float: right;
+        }
+        .buttons{
+            width: 6.5rem;
+            margin: 5rem auto 0 auto;
+            cursor: pointer;
+        }
+        .img{
+            margin: 0 auto;
+            width: 3rem;
+            height: 3rem;
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+        }
+        .download_img{
+            background-image: url('/static/images/download.png');
+        }
+        .upload_img{
+            background-image: url('/static/images/upload.png');
+        }
+        .label{
+            width: 6rem;
+            height: 2rem;
+            text-align: center;
+            margin: 0.5rem auto 2rem auto;
+            padding-left: 0.3rem;
+            padding-top: 0.3rem;
+            font-size: 1.2rem;
+            letter-spacing: 0.5rem;
+            background-color: #4285f4;
+            border-radius:1.1rem ;
+            color: white;
+        }
+    </style>
+    <link rel="stylesheet" href="/static/css/zTreeStyle.css">
 {% endblock %}
 
 {% block content %}
-    <p align="center">随便加的</p>
-    <canvas id="canvas" width="9.375rem" height="3.125rem"></canvas>
-<script>
+    <div class="tabs">
+        <div class="tabs-content">
+            <div class="tab">
+                <div class="note_area">
+                    <p align="center"></p>
+                </div>
+                <hr class="input_hr" style="margin-bottom: 1.5rem">
+                <div class="tree_area">
+                    <ul id="tree" class="ztree"></ul>
+                </div>
+                <div class="operation_area">
+                    <div class="buttons download" onclick="download()" title="download">
+                        <div class="img download_img"></div>
+                        <div class="label">下载</div>
+                    </div>
+                    <div class="buttons upload" style="display: none">
+                        <div class="img upload_img" title="upload"></div>
+                        <div class="label">上传</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
 
-</script>
+{% block scripts %}
 
+    <script src="/static/js/jquery.ztree.all.js"></script>
+    <script>
+        var setting = {
+            data: {//使用的数据格式
+                simpleData: {
+                    enable: true
+                }
+            },
+            view:{
+                selectedMulti:false
+            }
+        };
+
+    </script>
+    <script>
+        var vars={
+            csrf_token:'{{ csrf_token }}',
+            user_name:'{{ request.session.user_name }}'
+        };
+        var tree;
+        $(document).ready(function () {
+            check_user();
+        });
+
+        //检查用户状态：
+        function check_user() {
+            if(vars.user_name===''){
+                str='您未登录，无法使用文件服务。';
+                $('.note_area').find('p').text(str);
+            }
+            else{
+                $.ajax({
+                    type:"POST",
+                    url:"postActivateCheck",
+                    data:{
+                        "username":vars.user_name,
+                        csrfmiddlewaretoken: vars.csrf_token
+                    },
+                    success:function (result) {
+                        if(!result.isActive){   //用户未激活
+                            str='您的账户未激活，无法使用文件服务。';
+                            $('.note_area').find('p').text(str);
+                        }
+                        else{
+                            str='这里是文件服务页面，登录用户可自由下载文件，上传功能开发中 ￣ω￣=';
+                            $('.note_area').find('p').text(str);
+                            get_file_list();
+                        }
+                    }
+                })
+            }
+        }
+
+        //获取可下载文件：
+        function get_file_list() {
+            $.ajax({
+                type:"POST",
+                url:"/getFileList",
+                data:{
+                    csrfmiddlewaretoken: vars.csrf_token
+                },
+                success:function (result) {
+                    tree=$.fn.zTree.init($('#tree'),setting,result.data);
+
+                }
+            })
+        }
+    </script>
+    <script src="/static/js/down_up_load.js"></script>
 {% endblock %}

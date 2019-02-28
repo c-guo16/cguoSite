@@ -1,5 +1,4 @@
 from django.shortcuts import render,HttpResponse
-from django.core.paginator import Paginator,EmptyPage,PageNotAnInteger
 from django.core import serializers
 from messageBoard import models
 from django.http import JsonResponse

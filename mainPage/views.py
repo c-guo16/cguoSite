@@ -2,9 +2,6 @@ from mainPage.userManage import *
 
 # Create your views here.
 
-#访问次数：
-visit_times=0
-
 #获取用户ip：
 def get_ip(request):
     x_forwarded_for = request.META.get('HTTP_X_FORWARDED_FOR')
@@ -16,9 +13,7 @@ def get_ip(request):
 
 #首页：
 def render_index(request):
-    global visit_times
-    visit_times = visit_times + 1  #访问次数增加
-    return render(request,'index.html',{"v_times":visit_times,"v_ip":get_ip(request),"current_page":"main"})
+    return render(request,'index.html',{"v_ip":get_ip(request),"current_page":"main"})
 
 #文件服务页：
 def render_file_transfer(request):
@@ -44,3 +39,6 @@ def render_user_agreement(request):
 #查看用户状态页：
 def render_user_info(request):
     return render(request,"userInfo.html")
+
+def render_about(request):
+    return render(request,"about.html")
