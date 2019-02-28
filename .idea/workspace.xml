@@ -2,35 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="93b5aa65-ed0e-4674-8b26-e992d706ab41" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/js/down_up_load.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/about.html" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/datatables.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/datatables.min.js" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources/6ee9a1a6-285f-4f1a-a602-1f0b27239e2e/_metadata_/metadata" afterPath="$PROJECT_DIR$/.idea/dataSources/6ee9a1a6-285f-4f1a-a602-1f0b27239e2e/_metadata_/metadata" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources/6ee9a1a6-285f-4f1a-a602-1f0b27239e2e/_metadata_/metadata.keystream" afterPath="$PROJECT_DIR$/.idea/dataSources/6ee9a1a6-285f-4f1a-a602-1f0b27239e2e/_metadata_/metadata.keystream" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources/6ee9a1a6-285f-4f1a-a602-1f0b27239e2e/_metadata_/metadata.keystream.len" afterPath="$PROJECT_DIR$/.idea/dataSources/6ee9a1a6-285f-4f1a-a602-1f0b27239e2e/_metadata_/metadata.keystream.len" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources/6ee9a1a6-285f-4f1a-a602-1f0b27239e2e/_metadata_/metadata.len" afterPath="$PROJECT_DIR$/.idea/dataSources/6ee9a1a6-285f-4f1a-a602-1f0b27239e2e/_metadata_/metadata.len" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources/6ee9a1a6-285f-4f1a-a602-1f0b27239e2e/_metadata_/metadata_i" afterPath="$PROJECT_DIR$/.idea/dataSources/6ee9a1a6-285f-4f1a-a602-1f0b27239e2e/_metadata_/metadata_i" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources/6ee9a1a6-285f-4f1a-a602-1f0b27239e2e/_metadata_/metadata_i.len" afterPath="$PROJECT_DIR$/.idea/dataSources/6ee9a1a6-285f-4f1a-a602-1f0b27239e2e/_metadata_/metadata_i.len" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources/baf27898-b12f-4b76-a7d1-9d3af16247d9/_metadata_/metadata" afterPath="$PROJECT_DIR$/.idea/dataSources/baf27898-b12f-4b76-a7d1-9d3af16247d9/_metadata_/metadata" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources/baf27898-b12f-4b76-a7d1-9d3af16247d9/_metadata_/metadata.keystream" afterPath="$PROJECT_DIR$/.idea/dataSources/baf27898-b12f-4b76-a7d1-9d3af16247d9/_metadata_/metadata.keystream" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources/baf27898-b12f-4b76-a7d1-9d3af16247d9/_metadata_/metadata.keystream.len" afterPath="$PROJECT_DIR$/.idea/dataSources/baf27898-b12f-4b76-a7d1-9d3af16247d9/_metadata_/metadata.keystream.len" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources/baf27898-b12f-4b76-a7d1-9d3af16247d9/_metadata_/metadata.len" afterPath="$PROJECT_DIR$/.idea/dataSources/baf27898-b12f-4b76-a7d1-9d3af16247d9/_metadata_/metadata.len" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources/baf27898-b12f-4b76-a7d1-9d3af16247d9/_metadata_/metadata_i" afterPath="$PROJECT_DIR$/.idea/dataSources/baf27898-b12f-4b76-a7d1-9d3af16247d9/_metadata_/metadata_i" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources/baf27898-b12f-4b76-a7d1-9d3af16247d9/_metadata_/metadata_i.len" afterPath="$PROJECT_DIR$/.idea/dataSources/baf27898-b12f-4b76-a7d1-9d3af16247d9/_metadata_/metadata_i.len" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db.sqlite3" afterPath="$PROJECT_DIR$/db.sqlite3" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/remote_data/db.sqlite3" afterPath="$PROJECT_DIR$/remote_data/db.sqlite3" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources/6ee9a1a6-285f-4f1a-a602-1f0b27239e2e.xml" afterPath="$PROJECT_DIR$/.idea/dataSources/6ee9a1a6-285f-4f1a-a602-1f0b27239e2e.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cguoSite/settings.py" afterPath="$PROJECT_DIR$/cguoSite/settings.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cguoSite/urls.py" afterPath="$PROJECT_DIR$/cguoSite/urls.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mainPage/views.py" afterPath="$PROJECT_DIR$/mainPage/views.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/messageBoard/views.py" afterPath="$PROJECT_DIR$/messageBoard/views.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/css/base.css" afterPath="$PROJECT_DIR$/static/css/base.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/base.html" afterPath="$PROJECT_DIR$/templates/base.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/fileTransfer.html" afterPath="$PROJECT_DIR$/templates/fileTransfer.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/index.html" afterPath="$PROJECT_DIR$/templates/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/messageBoard.html" afterPath="$PROJECT_DIR$/templates/messageBoard.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -108,8 +82,8 @@
       <file leaf-file-name="about.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/templates/about.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="189">
-              <caret line="7" column="26" lean-forward="false" selection-start-line="7" selection-start-column="26" selection-end-line="7" selection-end-column="26" />
+            <state relative-caret-position="162">
+              <caret line="6" column="31" lean-forward="true" selection-start-line="6" selection-start-column="31" selection-end-line="6" selection-end-column="31" />
               <folding>
                 <element signature="e#3642#3662#0#HTML" expanded="true" />
                 <element signature="e#3717#3742#0#HTML" expanded="true" />
@@ -645,7 +619,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="784" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21028744" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
@@ -1147,19 +1121,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="dbDummy://dbtable:/34543b65/baf27898-b12f-4b76-a7d1-9d3af16247d9/main.mainPage_user">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="dbDummy://dbtable:/34543b65/6ee9a1a6-285f-4f1a-a602-1f0b27239e2e/main.mainPage_user">
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
@@ -1199,10 +1160,23 @@
         </state>
       </provider>
     </entry>
+    <entry file="dbDummy://dbtable:/34543b65/baf27898-b12f-4b76-a7d1-9d3af16247d9/main.mainPage_user">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/templates/about.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="7" column="26" lean-forward="false" selection-start-line="7" selection-start-column="26" selection-end-line="7" selection-end-column="26" />
+        <state relative-caret-position="162">
+          <caret line="6" column="31" lean-forward="true" selection-start-line="6" selection-start-column="31" selection-end-line="6" selection-end-column="31" />
           <folding>
             <element signature="e#3642#3662#0#HTML" expanded="true" />
             <element signature="e#3717#3742#0#HTML" expanded="true" />
