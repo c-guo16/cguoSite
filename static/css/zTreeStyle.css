@@ -86,6 +86,7 @@ website:	http://code.google.com/p/jquerytree/
 .ztree li span.button.excel_ico_docu{background-image: url('./img/excel.jpg');background-size: 100% 100%;background-repeat: no-repeat}
 .ztree li span.button.exe_ico_docu{background-image: url('./img/exe.jpg');background-size: 100% 100%;background-repeat: no-repeat}
 .ztree li span.button.ppt_ico_docu{background-image: url('./img/ppt.jpg');background-size: 100% 100%;background-repeat: no-repeat}
+.ztree li span.button.image_ico_docu{background-image: url('./img/image.jpg');background-size: 100% 100%;background-repeat: no-repeat}
 
 ul.tmpTargetzTree {background-color:#FFE6B0; opacity:0.8; filter:alpha(opacity=80)}
 

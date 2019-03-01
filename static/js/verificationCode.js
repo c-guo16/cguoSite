@@ -30,13 +30,13 @@ function drawPic(){
     ctx.fillStyle = randomColor(180,240);//填充画布颜色
     ctx.fillRect(0,0,_width,_height);//填充矩形--画画
     for(var i=0; i<_num; i++){
-        var x = (_width-4)/_num*i+4;
-        var y = randomNum(_height/2,_height);
-        var deg = randomNum(-45,45);
+        var x = (_width-24)/_num*i+30;
+        var y = randomNum(3*_height/4,_height);
+        var deg = randomNum(-40,40);
         var txt = _str[randomNum(0,_str.length)];
         _picTxt += txt;//获取一个随机数
         ctx.fillStyle = randomColor(10,100);//填充随机颜色
-        ctx.font = randomNum(60,100)/16+"rem SimHei";//设置随机数大小，字体为SimHei
+        ctx.font = randomNum(80,110)/13+"rem SimHei";//设置随机数大小，字体为SimHei
         ctx.translate(x,y);//将当前xy坐标作为原始坐标
         ctx.rotate(deg*Math.PI/180);//旋转随机角度
         ctx.fillText(txt, 0,0);//绘制填色的文本

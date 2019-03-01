@@ -39,10 +39,10 @@
             $.ajax({
                 type: "POST",
                 url: "/postUserInfo",
-                data:{"username":{{request.session.user_name}},
+                data:{"username":'{{request.session.user_name}}',
                         csrfmiddlewaretoken: '{{ csrf_token }}'},
                 success:function (result) {
-                    document.getElementById("username").innerText={{ request.session.user_name }};
+                    document.getElementById("username").innerText='{{ request.session.user_name }}';
                     document.getElementById("email").innerText=result.email;
                     if(result.isActive===true)
                         document.getElementById("isActive").innerText="已激活";

@@ -1,12 +1,14 @@
 from django.shortcuts import render,HttpResponse
 from django.http import JsonResponse,FileResponse,StreamingHttpResponse
 from django.core import serializers
+from django.utils.http import urlquote
 from mainPage import models
 from wsgiref.util import FileWrapper
 import os,zipfile,tempfile,shutil
 
 # Create your views here.
-FILE_ROOT_PATH= os.path.dirname(os.path.abspath(__file__)) + r'\files'
+FILE_ROOT_PATH= '../files'
+TEMPFILE_ROOT_PATH='../tempfiles'
 icon_dict={
     ".txt":"txt",
     ".mp3":"music",
@@ -29,7 +31,12 @@ icon_dict={
     ".xls":"excel",
     ".csv":"excel",
     ".pdf":"pdf",
-    ".exe":"exe"
+    ".exe":"exe",
+    ".jpg":"image",
+    ".png":"image",
+    ".jpeg":"image",
+    ".gif":"image",
+    ".bmp":"image"
 }
 
 #判断当前用户是否激活：
@@ -62,7 +69,7 @@ def getAlldirInDiGui(path,nodelist,plist,counter):
 #发送可下载文件列表：
 def sendFileList(request):
     global FILE_ROOT_PATH
-    nodelist=[{"id":1,"pId":0,"name":"files","path":FILE_ROOT_PATH}]
+    nodelist=[{"id":1,"pId":0,"name":"files","path":FILE_ROOT_PATH,"isParent":True}]
     parent_list={FILE_ROOT_PATH:1}
     counter=[1]
     getAlldirInDiGui(FILE_ROOT_PATH, nodelist, parent_list, counter)
@@ -72,22 +79,21 @@ def sendFileList(request):
 #下载指定文件：
 def sendFiles(request):
     global FILE_ROOT_PATH
-    #try:
-    filenum=int(request.POST.get('filenum'))
-    if filenum==1 and not os.path.isdir(request.POST.get("0")):  #发送单个文件
-        file = open(request.POST.get("0"), 'rb')
-        response = FileResponse(file)
-        response['content_type'] = "application/octet-stream"
-        response['Content-Disposition'] = 'attachment; filename=' + os.path.basename(request.POST.get("0"))
-        return response
-    else:   #发送单个文件夹
-        relative_path = r'D:\Python_Project\cguoSite\fileService'
-        filepath=request.POST.get('0')
-        shutil.make_archive("./fileService/tempfiles/"+os.path.basename(filepath), 'zip',root_dir=filepath)
-        file = open("./fileService/tempfiles/"+os.path.basename(filepath)+'.zip', 'rb')
-        response = FileResponse(file, content_type='application/zip')
-        response['Content-Disposition'] = 'attachment;filename='+os.path.basename(filepath)+'.zip'
-        return response
-    #except:
-    #    return HttpResponse("下载出现错误！")
+    try:
+        filenum=int(request.POST.get('filenum'))
+        if filenum==1 and not os.path.isdir(request.POST.get("0")):  #发送单个文件
+            file = open(request.POST.get("0"), 'rb')
+            response = FileResponse(file)
+            response['content_type'] = "application/octet-stream"
+            response['Content-Disposition'] = 'attachment; filename="%s"' % (urlquote(os.path.basename(request.POST.get("0"))))
+            return response
+        else:   #发送单个文件夹
+            filepath=request.POST.get('0')
+            shutil.make_archive(TEMPFILE_ROOT_PATH+os.path.basename(filepath), 'zip',root_dir=filepath)
+            file = open(TEMPFILE_ROOT_PATH+os.path.basename(filepath)+'.zip', 'rb')
+            response = FileResponse(file, content_type='application/zip')
+            response['Content-Disposition'] = 'attachment;filename="%s"' % (urlquote(os.path.basename(filepath)+'.zip'))
+            return response
+    except:
+        return HttpResponse("下载出现错误！")
 

@@ -408,24 +408,24 @@ model</ColNames>
       <DataType>varchar(20)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="103" parent="13" name="password">
+    <column id="103" parent="13" name="mail">
       <Position>2</Position>
-      <DataType>varchar(16)|0</DataType>
-      <NotNull>1</NotNull>
-    </column>
-    <column id="104" parent="13" name="mail">
-      <Position>3</Position>
       <DataType>varchar(50)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="105" parent="13" name="isActive">
-      <Position>4</Position>
+    <column id="104" parent="13" name="isActive">
+      <Position>3</Position>
       <DataType>bool|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="106" parent="13" name="uuid">
-      <Position>5</Position>
+    <column id="105" parent="13" name="uuid">
+      <Position>4</Position>
       <DataType>varchar(50)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="106" parent="13" name="password">
+      <Position>5</Position>
+      <DataType>varchar(40)|0</DataType>
       <NotNull>1</NotNull>
     </column>
     <key id="107" parent="13">

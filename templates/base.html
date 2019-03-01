@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 {% load staticfiles %}
+{% load cache %}
 
 <head>
     <meta name=”viewport” content=”width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no”/>
@@ -36,7 +37,6 @@
             </div>
         </div>
         <div id="navigation_bar">
-
             <ul>
                 <li {%if request.path == '/'%}class="active"{% endif %}><a href="/">首页</a></li>
                 <li {%if request.path|slice:'13' == '/fileTransfer'%}class="active"{% endif %}><a href="/fileTransfer">文件服务</a></li>
@@ -48,7 +48,8 @@
         {% block content %}
             <div>这里是默认内容，所有继承自这个模板的，如果不覆盖就显示这里的默认内容。</div>
         {% endblock %}
-        <p align="right" style="color:#2942c4;" id="commit">latest commit: 2019.2.24</p>
+        <p align="right" style="color:#2942c4;" class="commit">latest commit: 2019.3.1</p>
+        <p align="right" style="color:#2942c4;" class="commit">修复了一些bug</p>
     </div>
     {% block scripts %}
     {% endblock %}
