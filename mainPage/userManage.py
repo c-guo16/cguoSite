@@ -43,10 +43,8 @@ def handle_sign_up_form(request):
         request.session["user_name"]=new_user.username
         #发送邮件：
         random_str=get_random_str()
-        if settings.DEBUG:
-            url="http://127.0.0.1:8000/activate/?token=" + random_str
-        else:
-            url = "www.cguo16.com/activate/?token=" + random_str
+
+        url = "www.cguo16.com/activate/?token=" + random_str
         send_mail(subject="cguo16：账号激活",
                   message=username+" 您好，请点击下面的链接，激活您在cguo16网站的账号\n\n"+url,
                   recipient_list=[email],
