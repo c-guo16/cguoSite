@@ -17,10 +17,8 @@ def sendMessage(request,type):
     global one_page
     try:
         curPage=int(request.POST.get('page',1))
-        allPage=int(request.POST.get('allPage',1))
     except ValueError:
         curPage=1
-        allPage=1
 
     if type=="public":
         total=models.publicMessage.objects.count()
@@ -31,6 +29,8 @@ def sendMessage(request,type):
         else:                       #正常分页
             num = one_page
             messages=models.publicMessage.objects.all()[total-curPage*one_page:total-(curPage-1)*one_page]
+
+
     elif type=="private":
         user=request.POST.get('username')
         queryset=models.privateMessage.objects.filter(username=user)
@@ -46,6 +46,7 @@ def sendMessage(request,type):
     dayReg="^\d{4}-\d{2}-\d{2}"
     timeReg="(\d{2}:\d{2}):\d{2}"
     timeList=[]
+    reply_list=[]
     for i in range(num):
         now=datetime.datetime.now()
         time_str=messages[i].time.strftime("%Y-%m-%d %H:%M:%S")
@@ -58,10 +59,19 @@ def sendMessage(request,type):
         else:
             day = re.search(dayReg, time_str).group()
             timeList.append(day)
+        if type=="public":
+            if messages[i].reply!=-1:
+                reply_info=models.publicMessage.objects.get(id=messages[i].reply)
+                reply_list.append([reply_info.username,reply_info.content])
+            else:
+                reply_list.append(-1)
 
     page_num=math.ceil(total/one_page)#计算页数，向上取整
     json_data = serializers.serialize("json", messages, ensure_ascii=False)
-    return JsonResponse({"message_list":json_data,"page_num":page_num,"time_list":timeList})
+    if type=="public":
+        return JsonResponse({"message_list": json_data, "page_num": page_num, "time_list": timeList,"reply_list":reply_list})
+    else:
+        return JsonResponse({"message_list":json_data,"page_num":page_num,"time_list":timeList})
 
 #接收留言：
 def getMessage(request,type):
@@ -69,15 +79,16 @@ def getMessage(request,type):
         try:
             username=request.POST.get("username")
             message=request.POST.get("message")
+            reply=request.POST.get("reply")
             message=re.sub("\s+"," ",message)
             if type == 'public':
                 new_message=models.publicMessage.objects.create()
-            elif type == 'private':
+            else:
                 new_message = models.privateMessage.objects.create()
-            else:return HttpResponse("获取留言错误")
             if username!='':
                 new_message.username=username
             new_message.content=message
+            new_message.reply=reply
             new_message.save()
             return JsonResponse({"hhh":"ok"})
         except:

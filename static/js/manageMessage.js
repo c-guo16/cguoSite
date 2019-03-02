@@ -17,12 +17,15 @@ function postMessage(type) {
             data: {
                 "username":vars.user_name,
                 "message": $('div.active textarea').val(),
+                "reply":vars.reply_pk,
                 csrfmiddlewaretoken: vars.csrf_token
             },
             success: function (result) {
                 $('div.active textarea').val('');
                 $('div.active .button').attr("disabled",true);
                 $('div.active .limit').text('0/140');
+                $('#input_note').html('请输入您的留言：');
+                vars.reply_pk=-1;
                 $('.note_dynamic span').text("✔ 留言成功");
                 display_note_dynamic();
                 getMessage("public",1);
@@ -168,15 +171,27 @@ function display_messages(result,page,type) {
         str += '<hr class="input_hr">';
         str += '<div class="single_message">';
         str += '<p class="message_word"><span style="color:blue">' + messages[i]["fields"]["username"] + "</span>：" + messages[i]["fields"]["content"] + '</p>';
+        if(type==="public" && result.reply_list[i]!==-1) {
+            str += '<div style="background-color: #eaeaea;overflow: hidden">';
+            str += '<p class="message_word reply_word"><span style="color:blue">' + result.reply_list[i][0] + "</span>：" + result.reply_list[i][1] + '</p>';
+            str += '</div>';
+        }
         str += '<p style="color:#646464;font-size:0.5rem">' + result.time_list[i];
+        str+='<span id=\'' + messages[i]["pk"] + '\' class="footer">';
         //自己的评论可以删除：
         if(messages[i]["fields"]["username"]!=='游客'&&messages[i]["fields"]["username"]===vars.user_name){
-            str += '<span id=\''+messages[i]["pk"]+'\' class="delete" onclick="deleteMessage('+messages[i]["pk"]+',\''+type+'\')">删除</span>'
+            str += '<span class="delete" onclick="deleteMessage('+messages[i]["pk"]+',\''+type+'\')">删除</span>'
+            if(type==="public"){
+                str += '<span>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;</span>'
+            }
         }
-        str += '</p></div>';
+        if(type==="public") {
+            str += '<span class="reply" onclick="replyMessage('+messages[i]['pk']+',\''+messages[i]['fields']['username']+'\')">回复</span>'
+        }
+        str += '</span></p></div>';
     }
     $('div#'+type+' .display_area').html(str);
-    $('div#'+type+' .delete').css({
+    $('div#'+type+' .footer').css({
         "float":"right",
         "cursor":"pointer"
     });
@@ -195,6 +210,9 @@ function display_messages(result,page,type) {
         "word-break":"normal",
         "white-space":"pre-line",
         "word-wrapL":"break-word"
+    });
+    $('div#'+type+' .display_area .reply_word').css({
+        "margin":"0.5rem 0.75rem 0.5rem 0.75rem"
     });
 }
 
@@ -229,6 +247,22 @@ function getMessage(type,page) {
             }
         });
     }
+}
+
+//回复留言：
+function replyMessage(pk,username) {
+    str='请输入您的留言：&nbsp;&nbsp;<span class="reply_span" style="opacity: 0;background-color: #4285f4;border-radius: 1rem;padding: 0.1rem 0.8rem 0.1rem 0.8rem">回复 @'+username+'&nbsp;&nbsp;<span style="color: white;cursor:pointer" onclick="reply_cancel()">取消</span></span>';
+    $('#input_note').html(str);
+    $('.reply_span').transition({opacity:1},600);
+    vars.reply_pk=pk;
+    document.getElementById("input_area").scrollIntoViewIfNeeded();
+}
+
+//取消回复：
+function reply_cancel() {
+    str='请输入您的留言：';
+    $('#input_note').html(str);
+    vars.reply_pk=-1;
 }
 
 //删除评论：

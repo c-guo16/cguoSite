@@ -256,9 +256,9 @@
                     </div>
                     <div class="changePage_area">
                     </div>
-                    <div class="input_area">
+                    <div class="input_area" id="input_area">
                         <hr class="input_hr">
-                        <label style="display: block;margin-left: 1.25rem;float:left;width:12.5rem;">请输入您的留言：</label>
+                        <label id="input_note" style="display: block;margin-left: 1.25rem;float:left;width:12.5rem;">请输入您的留言：</label>
                         <label class="limit" style="float:left;width:12.5rem;margin-left: 21.875rem;">0/140</label>
                         <div class="textedit_area">
                             <textarea class="textedit" type="text" name="message" placeholder="输入留言（140字以内）" maxlength="140"></textarea>
@@ -294,11 +294,13 @@
 {% endblock %}
 
 {% block scripts %}
+    <script src="/static/js/jquery.transit.js"></script>
     <script>
         var vars={
             csrf_token:'{{ csrf_token }}',
             user_name:'{{ request.session.user_name }}',
-            current_page:-1
+            current_page:-1,
+            reply_pk:-1
         };
         function showLetterNum($input) {
             $input.find("textarea").on("input propertychange", function() {

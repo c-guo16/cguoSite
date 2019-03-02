@@ -2,46 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="93b5aa65-ed0e-4674-8b26-e992d706ab41" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/fileService/files/hhh.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/fileService/files/hhh2.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/fileService/files/测试文件夹/子文件 - 副本 (10).docx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/fileService/files/测试文件夹/子文件 - 副本 (11).meiyougeshi" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/fileService/files/测试文件夹/子文件 - 副本 (3).MP3" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/fileService/files/测试文件夹/子文件 - 副本 (4).rar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/fileService/files/测试文件夹/子文件 - 副本 (5).exe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/fileService/files/测试文件夹/子文件 - 副本 (6).MP4" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/fileService/files/测试文件夹/子文件 - 副本 (7).pdf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/fileService/files/测试文件夹/子文件 - 副本 (8).csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/fileService/files/测试文件夹/子文件 - 副本 (9).ppt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/fileService/files/测试文件夹/子文件 - 副本.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/fileService/files/测试文件夹/子文件 - 副本哈哈哈哈哈哈哈哈哈哈或或或或或或).txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/fileService/files/测试文件夹/子文件.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/fileService/files/测试文件夹/子文件夹/子文件.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/remote_data/db2.sqlite3" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resource.zip" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/images/fish.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/images/lol.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/images/shine.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/images/shine.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/images/timg.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/images/东方.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/images/翅膀.jpg" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources/6ee9a1a6-285f-4f1a-a602-1f0b27239e2e/_metadata_/metadata" afterPath="$PROJECT_DIR$/.idea/dataSources/6ee9a1a6-285f-4f1a-a602-1f0b27239e2e/_metadata_/metadata" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources/6ee9a1a6-285f-4f1a-a602-1f0b27239e2e/_metadata_/metadata.values.at" afterPath="$PROJECT_DIR$/.idea/dataSources/6ee9a1a6-285f-4f1a-a602-1f0b27239e2e/_metadata_/metadata.values.at" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources/baf27898-b12f-4b76-a7d1-9d3af16247d9/_metadata_/metadata" afterPath="$PROJECT_DIR$/.idea/dataSources/baf27898-b12f-4b76-a7d1-9d3af16247d9/_metadata_/metadata" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources/baf27898-b12f-4b76-a7d1-9d3af16247d9/_metadata_/metadata.values.at" afterPath="$PROJECT_DIR$/.idea/dataSources/baf27898-b12f-4b76-a7d1-9d3af16247d9/_metadata_/metadata.values.at" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db.sqlite3" afterPath="$PROJECT_DIR$/db.sqlite3" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/remote_data/db.sqlite3" afterPath="$PROJECT_DIR$/remote_data/db.sqlite3" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources/6ee9a1a6-285f-4f1a-a602-1f0b27239e2e.xml" afterPath="$PROJECT_DIR$/.idea/dataSources/6ee9a1a6-285f-4f1a-a602-1f0b27239e2e.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources/baf27898-b12f-4b76-a7d1-9d3af16247d9.xml" afterPath="$PROJECT_DIR$/.idea/dataSources/baf27898-b12f-4b76-a7d1-9d3af16247d9.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cguoSite/settings.py" afterPath="$PROJECT_DIR$/cguoSite/settings.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fileService/views.py" afterPath="$PROJECT_DIR$/fileService/views.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/css/zTreeStyle.css" afterPath="$PROJECT_DIR$/static/css/zTreeStyle.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/js/verificationCode.js" afterPath="$PROJECT_DIR$/static/js/verificationCode.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/about.html" afterPath="$PROJECT_DIR$/templates/about.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/messageBoard/models.py" afterPath="$PROJECT_DIR$/messageBoard/models.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/messageBoard/views.py" afterPath="$PROJECT_DIR$/messageBoard/views.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/js/manageMessage.js" afterPath="$PROJECT_DIR$/static/js/manageMessage.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/base.html" afterPath="$PROJECT_DIR$/templates/base.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/userInfo.html" afterPath="$PROJECT_DIR$/templates/userInfo.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/messageBoard.html" afterPath="$PROJECT_DIR$/templates/messageBoard.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -116,22 +86,97 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="about.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="about.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/about.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="234">
-              <caret line="207" column="47" lean-forward="false" selection-start-line="207" selection-start-column="47" selection-end-line="207" selection-end-column="47" />
+            <state relative-caret-position="-1579">
+              <caret line="158" column="56" lean-forward="true" selection-start-line="158" selection-start-column="4" selection-end-line="158" selection-end-column="56" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="settings.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/cguoSite/settings.py">
+      <file leaf-file-name="messageBoard.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/templates/messageBoard.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="138">
-              <caret line="76" column="67" lean-forward="false" selection-start-line="76" selection-start-column="67" selection-end-line="76" selection-end-column="67" />
+            <state relative-caret-position="153">
+              <caret line="259" column="43" lean-forward="false" selection-start-line="259" selection-start-column="43" selection-end-line="259" selection-end-column="43" />
+              <folding>
+                <element signature="e#7939#8008#0#HTML" expanded="true" />
+                <element signature="e#9072#9141#0#HTML" expanded="true" />
+                <marker date="1551518602963" expanded="true" signature="9079:9107" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="manageMessage.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/static/js/manageMessage.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="221">
+              <caret line="258" column="1" lean-forward="true" selection-start-line="258" selection-start-column="1" selection-end-line="258" selection-end-column="1" />
+              <folding>
+                <element signature="n#!!block;n#display_note_dynamic#0" expanded="false" />
+                <element signature="n#!!block;n#postMessage#0" expanded="false" />
+                <element signature="n#!!block;n#change_page#0" expanded="false" />
+                <element signature="e#7257#7503#0" expanded="false" />
+                <element signature="n#!!block;n#getMessage#0" expanded="false" />
+                <element signature="n#!!block;n#reply_cancel#0" expanded="false" />
+                <element signature="n#!!block;n#deleteMessage#0" expanded="false" />
+                <element signature="n#!!block;n#deleteMessage_confirm#0" expanded="false" />
+                <marker date="1551518603011" expanded="true" signature="6038:6055" ph="..." />
+                <marker date="1551518603011" expanded="true" signature="6536:6546" ph="..." />
+                <marker date="1551518603011" expanded="true" signature="6735:6777" ph="..." />
+                <marker date="1551518603011" expanded="true" signature="6850:6860" ph="..." />
+                <marker date="1551518603011" expanded="true" signature="7004:7034" ph="..." />
+                <marker date="1551518603011" expanded="true" signature="7434:7440" ph=" " />
+                <marker date="1551518603011" expanded="true" signature="7440:7446" ph=" " />
+                <marker date="1551518603011" expanded="true" signature="7446:7452" ph=" " />
+                <marker date="1551518603011" expanded="true" signature="7453:7459" ph=" " />
+                <marker date="1551518603011" expanded="true" signature="7459:7465" ph=" " />
+                <marker date="1551518603011" expanded="true" signature="7465:7471" ph=" " />
+                <marker date="1551518603011" expanded="true" signature="9448:9454" ph=" " />
+                <marker date="1551518603011" expanded="true" signature="9454:9460" ph=" " />
+                <marker date="1551518603011" expanded="true" signature="9492:9585" ph="..." />
+                <marker date="1551518603011" expanded="true" signature="9502:9585" ph="..." />
+                <marker date="1551518603011" expanded="true" signature="9503:9572" ph="..." />
+                <marker date="1551518603011" expanded="true" signature="9603:9609" ph=" " />
+                <marker date="1551518603011" expanded="true" signature="9609:9615" ph=" " />
+                <marker date="1551518603011" expanded="true" signature="9628:9635" ph="..." />
+                <marker date="1551518603011" expanded="true" signature="9628:9655" ph="..." />
+                <marker date="1551518603011" expanded="true" signature="11169:11186" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="main.messageBoard_publicmessage" pinned="false" current-in-tab="false">
+        <entry file="dbDummy://dbtable:/34543b65/baf27898-b12f-4b76-a7d1-9d3af16247d9/main.messageBoard_publicmessage">
+          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+            <state>
+              <filtering enabled="true" />
+            </state>
+          </provider>
+          <provider editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/messageBoard/views.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="248">
+              <caret line="66" column="37" lean-forward="true" selection-start-line="66" selection-start-column="37" selection-end-line="66" selection-end-column="37" />
+              <folding>
+                <element signature="e#0#48#0" expanded="true" />
+                <element signature="e#284#326#0" expanded="false" />
+                <element signature="e#641#773#0" expanded="false" />
+                <element signature="e#2770#3472#0" expanded="false" />
+                <element signature="e#3508#4039#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -139,9 +184,11 @@
       <file leaf-file-name="base.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/base.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="234">
-              <caret line="52" column="10" lean-forward="true" selection-start-line="52" selection-start-column="10" selection-end-line="52" selection-end-column="10" />
-              <folding />
+            <state relative-caret-position="161">
+              <caret line="31" column="44" lean-forward="false" selection-start-line="31" selection-start-column="44" selection-end-line="31" selection-end-column="44" />
+              <folding>
+                <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#0;n#body#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -186,7 +233,6 @@
         <option value="$PROJECT_DIR$/templates/userState.html" />
         <option value="$PROJECT_DIR$/templates/index1.html" />
         <option value="$PROJECT_DIR$/static/js/changeTab.js" />
-        <option value="$PROJECT_DIR$/messageBoard/models.py" />
         <option value="$PROJECT_DIR$/static/js/deleteMessage.js" />
         <option value="$PROJECT_DIR$/static/js/sha1.js" />
         <option value="$PROJECT_DIR$/mainPage/models.py" />
@@ -196,9 +242,6 @@
         <option value="$PROJECT_DIR$/templates/signIn.html" />
         <option value="$PROJECT_DIR$/templates/signUp.html" />
         <option value="$PROJECT_DIR$/templates/userAgreement.html" />
-        <option value="$PROJECT_DIR$/static/js/manageMessage.js" />
-        <option value="$PROJECT_DIR$/messageBoard/views.py" />
-        <option value="$PROJECT_DIR$/templates/messageBoard.html" />
         <option value="$PROJECT_DIR$/static/css/scp.py" />
         <option value="$PROJECT_DIR$/static/css/zTreeStyle - 副本 (2) - 副本.css" />
         <option value="$PROJECT_DIR$/static/js/down_up_load.js" />
@@ -212,8 +255,12 @@
         <option value="$PROJECT_DIR$/fileService/views.py" />
         <option value="$PROJECT_DIR$/static/js/verificationCode.js" />
         <option value="$PROJECT_DIR$/cguoSite/settings.py" />
-        <option value="$PROJECT_DIR$/templates/base.html" />
         <option value="$PROJECT_DIR$/templates/about.html" />
+        <option value="$PROJECT_DIR$/messageBoard/models.py" />
+        <option value="$PROJECT_DIR$/templates/base.html" />
+        <option value="$PROJECT_DIR$/messageBoard/views.py" />
+        <option value="$PROJECT_DIR$/templates/messageBoard.html" />
+        <option value="$PROJECT_DIR$/static/js/manageMessage.js" />
       </list>
     </option>
   </component>
@@ -245,8 +292,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -315,11 +360,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="static" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="css" />
+              <option name="myItemId" value="messageBoard" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -353,6 +394,8 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -617,10 +660,10 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="784" extended-state="7" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21331316" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21633889" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39483395" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17019667" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -628,7 +671,7 @@
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3276923" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26923078" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32615384" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24923077" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980332" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -668,18 +711,13 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/messageBoard/views.py</url>
-          <line>48</line>
+          <line>49</line>
           <option name="timeStamp" value="26" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/messageBoard/views.py</url>
-          <line>27</line>
+          <line>25</line>
           <option name="timeStamp" value="27" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/messageBoard/views.py</url>
-          <line>30</line>
-          <option name="timeStamp" value="28" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/fileService/views.py</url>
@@ -710,14 +748,14 @@
   </component>
   <component name="editorHistoryManager">
     <entry file="dbDummy://dbtable:/34543b65/baf27898-b12f-4b76-a7d1-9d3af16247d9/main.auth_user">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
           <filtering enabled="true" />
+        </state>
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -729,14 +767,14 @@
       </provider>
     </entry>
     <entry file="dbDummy://dbtable:/34543b65/baf27898-b12f-4b76-a7d1-9d3af16247d9/main.mainPage_activate">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
           <filtering enabled="true" />
+        </state>
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -751,7 +789,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -767,21 +804,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/mainPage/send_email.py" />
     <entry file="dbDummy://dbtable:/34543b65/baf27898-b12f-4b76-a7d1-9d3af16247d9/main.django_session">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
           <filtering enabled="true" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/messageBoard/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="297">
-          <caret line="11" column="50" lean-forward="false" selection-start-line="11" selection-start-column="50" selection-end-line="11" selection-end-column="50" />
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -835,7 +865,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="108">
           <caret line="5" column="25" lean-forward="false" selection-start-line="5" selection-start-column="25" selection-end-line="5" selection-end-column="25" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -844,17 +873,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-2126">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/messageBoard/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1445">
-          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="35" />
-          <folding>
-            <element signature="e#284#326#0" expanded="false" />
-            <element signature="e#2377#3064#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -909,9 +927,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="108">
           <caret line="6" column="8" lean-forward="false" selection-start-line="6" selection-start-column="8" selection-end-line="6" selection-end-column="8" />
-          <folding>
-            <element signature="n#!!doc;n#download#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -922,44 +937,27 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/messageBoard.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="7147">
-          <caret line="339" column="19" lean-forward="false" selection-start-line="339" selection-start-column="19" selection-end-line="339" selection-end-column="19" />
-          <folding>
-            <marker date="1551085198054" expanded="false" signature="9047:9075" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/js/manageMessage.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="112">
-          <caret line="240" column="53" lean-forward="false" selection-start-line="240" selection-start-column="4" selection-end-line="240" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
     <entry file="dbDummy://dbtable:/34543b65/6ee9a1a6-285f-4f1a-a602-1f0b27239e2e/main.messageBoard_privatemessage">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
           <filtering enabled="true" />
+        </state>
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="dbDummy://dbtable:/34543b65/6ee9a1a6-285f-4f1a-a602-1f0b27239e2e/main.messageBoard_publicmessage">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
           <filtering enabled="true" />
+        </state>
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -974,40 +972,14 @@
       </provider>
     </entry>
     <entry file="dbDummy://dbtable:/34543b65/6ee9a1a6-285f-4f1a-a602-1f0b27239e2e/main.mainPage_user">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
           <filtering enabled="true" />
         </state>
       </provider>
-    </entry>
-    <entry file="dbDummy://dbtable:/34543b65/baf27898-b12f-4b76-a7d1-9d3af16247d9/main.messageBoard_privatemessage">
       <provider editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="dbDummy://dbtable:/34543b65/baf27898-b12f-4b76-a7d1-9d3af16247d9/main.messageBoard_publicmessage">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
         </state>
       </provider>
     </entry>
@@ -1039,7 +1011,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-3564">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1047,20 +1018,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1148">
           <caret line="86" column="13" lean-forward="false" selection-start-line="86" selection-start-column="13" selection-end-line="86" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="dbDummy://dbtable:/34543b65/baf27898-b12f-4b76-a7d1-9d3af16247d9/main.mainPage_user">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
         </state>
       </provider>
     </entry>
@@ -1076,7 +1033,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
           <caret line="32" column="37" lean-forward="false" selection-start-line="32" selection-start-column="37" selection-end-line="32" selection-end-column="37" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1090,25 +1046,138 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/cguoSite/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
+        <state relative-caret-position="27">
           <caret line="76" column="67" lean-forward="false" selection-start-line="76" selection-start-column="67" selection-end-line="76" selection-end-column="67" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/messageBoard/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="7" column="41" lean-forward="false" selection-start-line="7" selection-start-column="41" selection-end-line="7" selection-end-column="41" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/base.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="52" column="10" lean-forward="true" selection-start-line="52" selection-start-column="10" selection-end-line="52" selection-end-column="10" />
-          <folding />
+        <state relative-caret-position="161">
+          <caret line="31" column="44" lean-forward="false" selection-start-line="31" selection-start-column="44" selection-end-line="31" selection-end-column="44" />
+          <folding>
+            <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#0;n#body#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/about.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="207" column="47" lean-forward="false" selection-start-line="207" selection-start-column="47" selection-end-line="207" selection-end-column="47" />
+        <state relative-caret-position="-1579">
+          <caret line="158" column="56" lean-forward="true" selection-start-line="158" selection-start-column="4" selection-end-line="158" selection-end-column="56" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/messageBoard/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="248">
+          <caret line="66" column="37" lean-forward="true" selection-start-line="66" selection-start-column="37" selection-end-line="66" selection-end-column="37" />
+          <folding>
+            <element signature="e#0#48#0" expanded="true" />
+            <element signature="e#284#326#0" expanded="false" />
+            <element signature="e#641#773#0" expanded="false" />
+            <element signature="e#2770#3472#0" expanded="false" />
+            <element signature="e#3508#4039#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/34543b65/baf27898-b12f-4b76-a7d1-9d3af16247d9/main.mainPage_user">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/34543b65/baf27898-b12f-4b76-a7d1-9d3af16247d9/main.messageBoard_privatemessage">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/js/manageMessage.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="258" column="1" lean-forward="true" selection-start-line="258" selection-start-column="1" selection-end-line="258" selection-end-column="1" />
+          <folding>
+            <element signature="n#!!block;n#display_note_dynamic#0" expanded="false" />
+            <element signature="n#!!block;n#postMessage#0" expanded="false" />
+            <element signature="n#!!block;n#change_page#0" expanded="false" />
+            <element signature="e#7257#7503#0" expanded="false" />
+            <element signature="n#!!block;n#getMessage#0" expanded="false" />
+            <element signature="n#!!block;n#reply_cancel#0" expanded="false" />
+            <element signature="n#!!block;n#deleteMessage#0" expanded="false" />
+            <element signature="n#!!block;n#deleteMessage_confirm#0" expanded="false" />
+            <marker date="1551518603011" expanded="true" signature="6038:6055" ph="..." />
+            <marker date="1551518603011" expanded="true" signature="6536:6546" ph="..." />
+            <marker date="1551518603011" expanded="true" signature="6735:6777" ph="..." />
+            <marker date="1551518603011" expanded="true" signature="6850:6860" ph="..." />
+            <marker date="1551518603011" expanded="true" signature="7004:7034" ph="..." />
+            <marker date="1551518603011" expanded="true" signature="7434:7440" ph=" " />
+            <marker date="1551518603011" expanded="true" signature="7440:7446" ph=" " />
+            <marker date="1551518603011" expanded="true" signature="7446:7452" ph=" " />
+            <marker date="1551518603011" expanded="true" signature="7453:7459" ph=" " />
+            <marker date="1551518603011" expanded="true" signature="7459:7465" ph=" " />
+            <marker date="1551518603011" expanded="true" signature="7465:7471" ph=" " />
+            <marker date="1551518603011" expanded="true" signature="9448:9454" ph=" " />
+            <marker date="1551518603011" expanded="true" signature="9454:9460" ph=" " />
+            <marker date="1551518603011" expanded="true" signature="9492:9585" ph="..." />
+            <marker date="1551518603011" expanded="true" signature="9502:9585" ph="..." />
+            <marker date="1551518603011" expanded="true" signature="9503:9572" ph="..." />
+            <marker date="1551518603011" expanded="true" signature="9603:9609" ph=" " />
+            <marker date="1551518603011" expanded="true" signature="9609:9615" ph=" " />
+            <marker date="1551518603011" expanded="true" signature="9628:9635" ph="..." />
+            <marker date="1551518603011" expanded="true" signature="9628:9655" ph="..." />
+            <marker date="1551518603011" expanded="true" signature="11169:11186" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/34543b65/baf27898-b12f-4b76-a7d1-9d3af16247d9/main.messageBoard_publicmessage">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/messageBoard.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="259" column="43" lean-forward="false" selection-start-line="259" selection-start-column="43" selection-end-line="259" selection-end-column="43" />
+          <folding>
+            <element signature="e#7939#8008#0#HTML" expanded="true" />
+            <element signature="e#9072#9141#0#HTML" expanded="true" />
+            <marker date="1551518602963" expanded="true" signature="9079:9107" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
