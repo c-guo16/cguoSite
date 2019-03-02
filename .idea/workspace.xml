@@ -2,16 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="93b5aa65-ed0e-4674-8b26-e992d706ab41" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources/baf27898-b12f-4b76-a7d1-9d3af16247d9/_metadata_/metadata" afterPath="$PROJECT_DIR$/.idea/dataSources/baf27898-b12f-4b76-a7d1-9d3af16247d9/_metadata_/metadata" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources/baf27898-b12f-4b76-a7d1-9d3af16247d9/_metadata_/metadata.values.at" afterPath="$PROJECT_DIR$/.idea/dataSources/baf27898-b12f-4b76-a7d1-9d3af16247d9/_metadata_/metadata.values.at" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db.sqlite3" afterPath="$PROJECT_DIR$/db.sqlite3" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources/baf27898-b12f-4b76-a7d1-9d3af16247d9.xml" afterPath="$PROJECT_DIR$/.idea/dataSources/baf27898-b12f-4b76-a7d1-9d3af16247d9.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/messageBoard/models.py" afterPath="$PROJECT_DIR$/messageBoard/models.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/messageBoard/views.py" afterPath="$PROJECT_DIR$/messageBoard/views.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/js/manageMessage.js" afterPath="$PROJECT_DIR$/static/js/manageMessage.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/base.html" afterPath="$PROJECT_DIR$/templates/base.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/messageBoard.html" afterPath="$PROJECT_DIR$/templates/messageBoard.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -90,22 +81,23 @@
         <entry file="file://$PROJECT_DIR$/templates/about.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="-1579">
-              <caret line="158" column="56" lean-forward="true" selection-start-line="158" selection-start-column="4" selection-end-line="158" selection-end-column="56" />
+              <caret line="158" column="56" lean-forward="false" selection-start-line="158" selection-start-column="4" selection-end-line="158" selection-end-column="56" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="messageBoard.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/templates/messageBoard.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="259" column="43" lean-forward="false" selection-start-line="259" selection-start-column="43" selection-end-line="259" selection-end-column="43" />
-              <folding>
-                <element signature="e#7939#8008#0#HTML" expanded="true" />
-                <element signature="e#9072#9141#0#HTML" expanded="true" />
-                <marker date="1551518602963" expanded="true" signature="9079:9107" ph="..." />
-              </folding>
+      <file leaf-file-name="main.mainPage_user" pinned="false" current-in-tab="false">
+        <entry file="dbDummy://dbtable:/34543b65/baf27898-b12f-4b76-a7d1-9d3af16247d9/main.mainPage_user">
+          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+            <state>
+              <filtering enabled="true" />
+            </state>
+          </provider>
+          <provider editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -114,7 +106,7 @@
         <entry file="file://$PROJECT_DIR$/static/js/manageMessage.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="221">
-              <caret line="258" column="1" lean-forward="true" selection-start-line="258" selection-start-column="1" selection-end-line="258" selection-end-column="1" />
+              <caret line="258" column="1" lean-forward="false" selection-start-line="258" selection-start-column="1" selection-end-line="258" selection-end-column="1" />
               <folding>
                 <element signature="n#!!block;n#display_note_dynamic#0" expanded="false" />
                 <element signature="n#!!block;n#postMessage#0" expanded="false" />
@@ -150,26 +142,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main.messageBoard_publicmessage" pinned="false" current-in-tab="false">
-        <entry file="dbDummy://dbtable:/34543b65/baf27898-b12f-4b76-a7d1-9d3af16247d9/main.messageBoard_publicmessage">
-          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-            <state>
-              <filtering enabled="true" />
-            </state>
-          </provider>
-          <provider editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/messageBoard/views.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="248">
-              <caret line="66" column="37" lean-forward="true" selection-start-line="66" selection-start-column="37" selection-end-line="66" selection-end-column="37" />
+              <caret line="66" column="37" lean-forward="false" selection-start-line="66" selection-start-column="37" selection-end-line="66" selection-end-column="37" />
               <folding>
                 <element signature="e#0#48#0" expanded="true" />
                 <element signature="e#284#326#0" expanded="false" />
@@ -181,11 +158,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="base.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="base.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/templates/base.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="161">
-              <caret line="31" column="44" lean-forward="false" selection-start-line="31" selection-start-column="44" selection-end-line="31" selection-end-column="44" />
+            <state relative-caret-position="315">
+              <caret line="56" column="0" lean-forward="true" selection-start-line="56" selection-start-column="0" selection-end-line="56" selection-end-column="0" />
               <folding>
                 <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#0;n#body#0;n#!!top" expanded="true" />
               </folding>
@@ -257,10 +234,10 @@
         <option value="$PROJECT_DIR$/cguoSite/settings.py" />
         <option value="$PROJECT_DIR$/templates/about.html" />
         <option value="$PROJECT_DIR$/messageBoard/models.py" />
-        <option value="$PROJECT_DIR$/templates/base.html" />
         <option value="$PROJECT_DIR$/messageBoard/views.py" />
         <option value="$PROJECT_DIR$/templates/messageBoard.html" />
         <option value="$PROJECT_DIR$/static/js/manageMessage.js" />
+        <option value="$PROJECT_DIR$/templates/base.html" />
       </list>
     </option>
   </component>
@@ -660,7 +637,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="784" extended-state="7" />
+    <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21633889" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
@@ -1060,34 +1037,41 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/base.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="31" column="44" lean-forward="false" selection-start-line="31" selection-start-column="44" selection-end-line="31" selection-end-column="44" />
-          <folding>
-            <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#0;n#body#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/about.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1579">
-          <caret line="158" column="56" lean-forward="true" selection-start-line="158" selection-start-column="4" selection-end-line="158" selection-end-column="56" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/messageBoard/views.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="248">
-          <caret line="66" column="37" lean-forward="true" selection-start-line="66" selection-start-column="37" selection-end-line="66" selection-end-column="37" />
+          <caret line="66" column="37" lean-forward="false" selection-start-line="66" selection-start-column="37" selection-end-line="66" selection-end-column="37" />
           <folding>
             <element signature="e#0#48#0" expanded="true" />
             <element signature="e#284#326#0" expanded="false" />
             <element signature="e#641#773#0" expanded="false" />
             <element signature="e#2770#3472#0" expanded="false" />
             <element signature="e#3508#4039#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/34543b65/baf27898-b12f-4b76-a7d1-9d3af16247d9/main.messageBoard_privatemessage">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/messageBoard.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="259" column="43" lean-forward="false" selection-start-line="259" selection-start-column="43" selection-end-line="259" selection-end-column="43" />
+          <folding>
+            <element signature="e#7939#8008#0#HTML" expanded="true" />
+            <element signature="e#9072#9141#0#HTML" expanded="true" />
+            <marker date="1551518602963" expanded="true" signature="9079:9107" ph="..." />
           </folding>
         </state>
       </provider>
@@ -1105,7 +1089,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="dbDummy://dbtable:/34543b65/baf27898-b12f-4b76-a7d1-9d3af16247d9/main.messageBoard_privatemessage">
+    <entry file="dbDummy://dbtable:/34543b65/baf27898-b12f-4b76-a7d1-9d3af16247d9/main.messageBoard_publicmessage">
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
           <filtering enabled="true" />
@@ -1121,7 +1105,7 @@
     <entry file="file://$PROJECT_DIR$/static/js/manageMessage.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
-          <caret line="258" column="1" lean-forward="true" selection-start-line="258" selection-start-column="1" selection-end-line="258" selection-end-column="1" />
+          <caret line="258" column="1" lean-forward="false" selection-start-line="258" selection-start-column="1" selection-end-line="258" selection-end-column="1" />
           <folding>
             <element signature="n#!!block;n#display_note_dynamic#0" expanded="false" />
             <element signature="n#!!block;n#postMessage#0" expanded="false" />
@@ -1156,27 +1140,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="dbDummy://dbtable:/34543b65/baf27898-b12f-4b76-a7d1-9d3af16247d9/main.messageBoard_publicmessage">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+    <entry file="file://$PROJECT_DIR$/templates/about.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1579">
+          <caret line="158" column="56" lean-forward="false" selection-start-line="158" selection-start-column="4" selection-end-line="158" selection-end-column="56" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/messageBoard.html">
+    <entry file="file://$PROJECT_DIR$/templates/base.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="259" column="43" lean-forward="false" selection-start-line="259" selection-start-column="43" selection-end-line="259" selection-end-column="43" />
+        <state relative-caret-position="315">
+          <caret line="56" column="0" lean-forward="true" selection-start-line="56" selection-start-column="0" selection-end-line="56" selection-end-column="0" />
           <folding>
-            <element signature="e#7939#8008#0#HTML" expanded="true" />
-            <element signature="e#9072#9141#0#HTML" expanded="true" />
-            <marker date="1551518602963" expanded="true" signature="9079:9107" ph="..." />
+            <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#0;n#body#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
