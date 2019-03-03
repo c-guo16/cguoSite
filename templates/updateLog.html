@@ -1,0 +1,101 @@
+{% extends "base.html" %}
+
+{% block head %}
+    <title>Update Log</title>
+    <style>
+        .tabs {
+            position: relative;
+            background: #4285f4;
+            width: 50rem;
+            margin: 6.25rem auto 0.625rem;
+            overflow: hidden;
+            border-radius: 0.625rem;
+        }
+        .tabs-content {
+            margin: 1.25rem 0.625rem 1.25rem 0.625rem;
+            position: relative;
+            transition: 0.3s ease;
+            overflow: hidden;
+            border-radius: 0.625rem;
+            background-color: #f8f8f8;
+        }
+        .tabs-content:after {
+            content: '';
+            position: absolute;
+            bottom: -0.0625rem;
+            left: 0;
+            display: block;
+            width: 100%;
+            height: 0.0625rem;
+            box-shadow: 0 0 1.25rem 0.625rem #FFFFFF;
+        }
+        .tabs-content .input_hr{
+            align-items:center;
+            width:46.25rem;
+            color: #d3d3d3;
+            margin: 0 auto 0.5rem auto;
+        }
+        .tabs-content .note_area{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 3.75rem;
+            width: fit-content;
+            margin: 0.9375rem auto;
+            border-radius: 1.875rem;
+            background-color: #4285f4;
+            z-index: 111;
+        }
+        .note_area p{
+            margin: 0 2rem 0 2.2rem;
+            color: white;
+        }
+        .tree_area{
+            overflow: auto;
+            background-color: white;
+            margin-left: 2.2rem;
+            height: 40rem;
+            width: 90%;
+            font-size: 1.5rem;
+        }
+    </style>
+{% endblock %}
+
+{% block content %}
+    <div class="tabs">
+        <div class="tabs-content">
+            <div class="tab">
+                <div class="note_area">
+                    <p align="center">更新日志</p>
+                </div>
+                <hr class="input_hr" style="margin-bottom: 1.5rem">
+                <textarea class="tree_area" readonly="readonly">
+3月3日：
+*
+*添加更新日志页面
+
+—————————————————————————————
+
+3月2日：
+*留言板添加回复功能
+
+—————————————————————————————
+
+3月1日：
+*修复了userinfo用户名转换字符串的bug
+*验证码体验优化
+*文件服务优化
+
+—————————————————————————————
+
+2月28日：
+*1.0版本上线
+                </textarea>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block scripts %}
+
+{% endblock %}

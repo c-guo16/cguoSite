@@ -83,28 +83,28 @@
         <form id='signUpForm' action="/postSignUp" method="post" onsubmit="return validate()"> {% csrf_token %}
             <div class="form-group">
                 <label style="letter-spacing: 0.4375rem">用户名：</label>
-                <input type="text" name="username" id="username" placeholder="请输入用户名" onchange="username_duplicate_check()"/>
+                <input type="text" name="username" id="username" placeholder="请输入用户名" onchange="username_duplicate_check()" maxlength="20"/>
                 <div>
                     <p id="form_username">{{ username_note }}</p>
                 </div>
             </div>
             <div class="form-group">
                 <label style="letter-spacing: 1.25rem">密码：</label>
-                <input type="password" name="password" id="password" placeholder="请输入密码" onchange="check_form()"/>
+                <input type="password" name="password" id="password" placeholder="请输入密码" onchange="check_form()" maxlength="40"/>
                 <div>
                     <p id="form_password"></p>
                 </div>
             </div>
             <div class="form-group">
                 <label>确认密码：</label>
-                <input type="password" name="password_confirm" id="password_confirm" placeholder="请确认密码" onchange="check_form()"/>
+                <input type="password" name="password_confirm" id="password_confirm" placeholder="请确认密码" onchange="check_form()" maxlength="40"/>
                 <div>
                     <p id="form_password_confirm"></p>
                 </div>
             </div>
             <div class="form-group">
                 <label style="letter-spacing: 1.25rem">邮箱：</label>
-                <input type="text" name="email" id="email" placeholder="请输入邮箱地址" onchange="email_duplicate_check()"/>
+                <input type="text" name="email" id="email" placeholder="请输入邮箱地址" onchange="email_duplicate_check()" maxlength="50"/>
                 <div>
                     <p id="form_email">{{ email_note }}</p>
                 </div>

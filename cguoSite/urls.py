@@ -22,6 +22,9 @@ from django.contrib.staticfiles.urls import staticfiles_urlpatterns
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    #更新日志：
+    path('updateLog',mpviews.render_updateLog),
+
     #导航栏按键：
     path('',mpviews.render_index),
     path('fileTransfer',mpviews.render_file_transfer),

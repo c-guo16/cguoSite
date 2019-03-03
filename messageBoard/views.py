@@ -6,7 +6,7 @@ import datetime
 import math,re
 
 # Create your views here.
-one_page=5      #一页数据的条数
+one_page=8      #一页数据的条数
 
 #留言板页：
 def render_message_board(request):

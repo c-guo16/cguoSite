@@ -1,7 +1,7 @@
 {% extends "base.html" %}
 
 {% block head %}
-    <title>Go To Activate Your Account</title>
+    <title>Activate Your Account</title>
     <style type="text/css">
         div#para{
             text-align: center;
@@ -38,6 +38,7 @@
     <p id="title">注册成功</p>
     <div id="para">
         <p id="para1">您的账户处于未激活状态，请到您的邮箱<span id="email"> {{ email }} </span>查收激活邮件。</p>
+        <p id="para2" style="text-align: center">若未收到激活邮件，则可能是邮件被系统误判为垃圾邮件，请到垃圾箱查看。</p>
     </div>
     <div style="text-align: center">
         <button type="button" id="return" onclick="window.location.href='/'">返回首页</button>

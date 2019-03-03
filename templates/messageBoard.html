@@ -294,6 +294,9 @@
 {% endblock %}
 
 {% block scripts %}
+    <script src="/static/js/emoji-list-with-image.js"></script>
+    <script src="/static/js/punycode.js"></script>
+    <script src="/static/js/emoji.js"></script>
     <script src="/static/js/jquery.transit.js"></script>
     <script>
         var vars={
@@ -347,4 +350,46 @@
     </script>
     <script src="/static/js/changeTab.js"></script>
     <script src="/static/js/manageMessage.js"></script>
+    <script>
+        //解析存储的emoji表情
+        function parse(arg) {
+            if (typeof ioNull !=='undefined') {
+                return  ioNull.emoji.parse(arg);
+            }
+            return '';
+        }
+        //反解析（web上，图片数据转为emoji字符编码存储）
+        function decode(htmlStr) {
+            //todo 正则替换性能更优？unicode16="1f603"
+            if (typeof ioNull === 'undefined') {
+                return '';
+            }
+            var tempStr = htmlStr, unis = '', $imgs = $('<div>').append(htmlStr).find('img');
+            $.each($imgs , function (i, o) {
+                var $img = $(o);
+                var unicode16 = '0x' + $img.attr('unicode16'); //十六进制
+                unicode16 = ioNull.emoji.decodeChar(unicode16);
+                //unis += unicode16;
+                tempStr = tempStr.replace($('<div>').append($img).html(), unicode16);
+            });
+            //System.log(unis)
+            return tempStr;
+        }
+        //示例生成emoji图片输入
+        function renderEmoji() {
+            var emos = getEmojiList()[0];//此处按需是否生成所有emoji
+            var html = '<div >常用表情</div><ul>';
+            for (var j = 0; j < emos.length; j++) {
+                var emo = emos[j];
+                var data = 'data:image/png;base64,' + emo[2];
+                if (j % 20 === 0) {
+                    html += '<li class="">';
+                } else {
+                    html += '<li>';
+                }
+                html += '<img style="display: inline;vertical-align: middle;" src="' + data + '"  unicode16="' + emo[1] + '" /></li>';
+            }
+            $('div#test').html(html);
+        }
+    </script>
 {% endblock %}

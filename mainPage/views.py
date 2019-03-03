@@ -40,5 +40,10 @@ def render_user_agreement(request):
 def render_user_info(request):
     return render(request,"userInfo.html")
 
+#“关于”页：
 def render_about(request):
     return render(request,"about.html")
+
+#更新日志页：
+def render_updateLog(request):
+    return render(request,"updateLog.html")
