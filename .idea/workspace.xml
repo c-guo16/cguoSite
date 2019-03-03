@@ -2,18 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="93b5aa65-ed0e-4674-8b26-e992d706ab41" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/updateLog.html" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/bootstrap.min.js" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db.sqlite3" afterPath="$PROJECT_DIR$/db.sqlite3" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cguoSite/urls.py" afterPath="$PROJECT_DIR$/cguoSite/urls.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mainPage/views.py" afterPath="$PROJECT_DIR$/mainPage/views.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/messageBoard/views.py" afterPath="$PROJECT_DIR$/messageBoard/views.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/base.html" afterPath="$PROJECT_DIR$/templates/base.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/messageBoard.html" afterPath="$PROJECT_DIR$/templates/messageBoard.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/requestForActivate.html" afterPath="$PROJECT_DIR$/templates/requestForActivate.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/signIn.html" afterPath="$PROJECT_DIR$/templates/signIn.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/signUp.html" afterPath="$PROJECT_DIR$/templates/signUp.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -114,26 +103,12 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="base.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="base.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/templates/base.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="186">
-              <caret line="53" column="23" lean-forward="false" selection-start-line="53" selection-start-column="23" selection-end-line="53" selection-end-column="23" />
+            <state relative-caret-position="159">
+              <caret line="52" column="10" lean-forward="true" selection-start-line="52" selection-start-column="10" selection-end-line="52" selection-end-column="10" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="messageBoard.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/templates/messageBoard.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="152">
-              <caret line="288" column="24" lean-forward="false" selection-start-line="288" selection-start-column="24" selection-end-line="288" selection-end-column="24" />
-              <folding>
-                <element signature="e#10049#12205#0#HTML" expanded="false" />
-                <element signature="e#12318#13929#0#HTML" expanded="false" />
-                <marker date="1551577533573" expanded="true" signature="9079:9107" ph="..." />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -202,13 +177,13 @@
         <option value="$PROJECT_DIR$/templates/signUp.html" />
         <option value="$PROJECT_DIR$/templates/signIn.html" />
         <option value="$PROJECT_DIR$/templates/requestForActivate.html" />
-        <option value="$PROJECT_DIR$/templates/base.html" />
         <option value="$PROJECT_DIR$/mainPage/views.py" />
         <option value="$PROJECT_DIR$/templates/userAgreement.html" />
         <option value="$PROJECT_DIR$/cguoSite/urls.py" />
         <option value="$PROJECT_DIR$/templates/updateLog.html" />
         <option value="$PROJECT_DIR$/messageBoard/views.py" />
         <option value="$PROJECT_DIR$/templates/messageBoard.html" />
+        <option value="$PROJECT_DIR$/templates/base.html" />
       </list>
     </option>
   </component>
@@ -1086,14 +1061,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/base.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="186">
-          <caret line="53" column="23" lean-forward="false" selection-start-line="53" selection-start-column="23" selection-end-line="53" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="dbDummy://dbtable:/34543b65/baf27898-b12f-4b76-a7d1-9d3af16247d9/main.messageBoard_privatemessage">
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
@@ -1135,13 +1102,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/messageBoard.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
+        <state relative-caret-position="13">
           <caret line="288" column="24" lean-forward="false" selection-start-line="288" selection-start-column="24" selection-end-line="288" selection-end-column="24" />
           <folding>
             <element signature="e#10049#12205#0#HTML" expanded="false" />
             <element signature="e#12318#13929#0#HTML" expanded="false" />
             <marker date="1551577533573" expanded="true" signature="9079:9107" ph="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/base.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="159">
+          <caret line="52" column="10" lean-forward="true" selection-start-line="52" selection-start-column="10" selection-end-line="52" selection-end-column="10" />
+          <folding />
         </state>
       </provider>
     </entry>
