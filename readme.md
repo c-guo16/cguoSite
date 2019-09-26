@@ -1,4 +1,4 @@
-##运行方法：
+## 运行方法：
 * 本地测试使用命令
 >python manage.py runserver 127.0.0.1:80 
 
